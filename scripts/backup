@@ -1,0 +1,8 @@
+#/bin/bash
+# backup Script for Hydraulics and Fluid Mechanics Lab
+# backup Script takes the backup of the data used by the lab.
+# Since there is no data being used by Hydraulics and Fluid Mechanics Lab,
+# the script does nothing.
+# Usage of the script
+# To use backup script, run the command
+# ./scripts/backup
