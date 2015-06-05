@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<TITLE>Virtual labs project</TITLE>
+<STYLE>
+body, input{
+	font-family: Calibri, Arial;
+	size : 20;
+}
+
+</STYLE>
+</HEAD>
+<BODY>
+<center>
+<img src="vlabs.jpg"><br>
+<a href= list.php?mode=><img border=0 src="start.png"></a>
+<center>
+</HTML>

@@ -1,0 +1,196 @@
+<?php
+require('fpdf.php');
+
+
+
+$eid = $_GET["mode"];
+
+# Database name
+$db = "cell";
+
+# Internet address or hostname of database host
+$db_host = "localhost";
+
+# Database username
+$db_user = "root";
+
+# Database password
+$db_password = "sbn1024";
+
+ # Connect to the database and report any errors on connect.
+ $cid = mysql_connect($db_host,$db_user,$db_password);
+
+ if (!$cid) {
+
+  die("ERROR: " . mysql_error() . "\n");
+
+ } 
+mysql_select_db ($db);
+$stuff = mysql_query("SELECT * FROM `htl_exp` WHERE eid='".$eid."'") or die("MySQL Login Error: ".mysql_error()); 
+
+ # Check for errors.
+if (mysql_num_rows($stuff) > 0)
+ { 
+ $row=mysql_num_rows($stuff);
+
+
+while($row = mysql_fetch_array($stuff))
+  {
+$name=$row['name'];
+$plen=$row['sys']; 
+$date=$row['date'];
+
+}
+}
+
+
+$pdf=new FPDF();
+$pdf->AddPage();
+
+
+  //Logo
+    $pdf->Image('vlabs.jpg',10,8,70);
+    //Arial bold 15
+    $pdf->SetFont('Arial','B',15);
+    //Move to the right
+
+    //Title
+   
+    //Line break
+    $pdf->Ln(20);
+    $pdf->Cell(20);
+ $pdf->Cell(150,10,'Heat transfer in double pipe heat exchanger',1,0,'C');
+    $pdf->Ln(20);
+$pdf->SetFont('Times','B',18);
+$pdf->SetTextColor(51,153,255);
+$pdf->Cell(40,10,'Report for '.$name);
+$pdf->Ln();
+
+
+
+$pdf->SetFont('Arial','B',12);
+$pdf->SetTextColor(128);
+$pdf->Cell(100,5,'Date of experiment : '.$date);
+$pdf->Ln();
+$pdf->Ln();
+
+
+
+
+
+ # Connect to the database and report any errors on connect.
+ $cid = mysql_connect($db_host,$db_user,$db_password);
+
+ if (!$cid) {
+
+  die("ERROR: " . mysql_error() . "\n");
+
+ } 
+mysql_select_db ($db);
+$stuff = mysql_query("SELECT eid, percent, hft, cft, thout, tcout FROM `htl_datanew` WHERE eid='".$eid."'") or die("MySQL Login Error: ".mysql_error()); 
+
+ # Check for errors.
+if (mysql_num_rows($stuff) > 0)
+ { 
+ $row=mysql_num_rows($stuff);
+$ino = 1;
+
+while($row = mysql_fetch_array($stuff))
+  {
+$percent=$row['percent']; 
+$hft=$row['hft']; 
+$cft=$row['cft']; 
+$thout=$row['thout']; 
+$tcout=$row['tcout']; 
+
+$pdf->SetFont('Arial','U',16);
+$pdf->SetTextColor(128);
+$pdf->Cell(40,10,'Iteration '.$ino);
+$pdf->Ln();
+$pdf->Ln();
+$ino = $ino + 1;
+
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,' Hot fluid outlet temperature: ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v1.' C');
+$pdf->Ln();
+$pdf->Ln();
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Hot fluid outlet temperature: ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v2.' C');
+$pdf->Ln();
+$pdf->Ln();
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,' Heat load(Q) : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v3.' J/s');
+$pdf->Ln();
+$pdf->Ln();
+	
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Log mean temperature difference(LMTD): ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v4.' C');
+$pdf->Ln();
+$pdf->Ln();
+	
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Hot fluid volumetric flow rate : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v5);
+$pdf->Ln();
+$pdf->Ln();
+	
+
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Overall heat transfer coefficient(Ui) : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v6);
+$pdf->Ln();
+$pdf->Ln();
+
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Heat transfer coefficient tube side(hi) : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v7);
+$pdf->Ln();
+$pdf->Ln();
+
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Hot fluid Nusselt no : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v8);
+$pdf->Ln();
+$pdf->Ln();
+
+	$pdf->SetFont('Times','B',10);
+$pdf->Cell(100,5,'Hot fluid Reynolds no : ');
+$pdf->SetFont('Arial','I',10);
+$pdf->Cell(100,5,$v9);
+$pdf->Ln();
+$pdf->Ln();
+
+
+
+$pdf->Ln();
+$pdf->Ln();	
+$pdf->Ln();
+$pdf->Ln();	
+
+
+}
+}
+
+
+
+
+
+$pdf->Output();
+
+
+
+
+
+?>

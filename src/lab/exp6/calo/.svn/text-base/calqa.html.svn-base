@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<TITLE>Virtual labs project</TITLE>
+<STYLE>
+body, input{
+	font-family: Calibri, Arial;
+}
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 600px;
+}
+#accordion li{
+	display: block;
+	background-color: #FF9927;
+	font-weight: bold;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	list-style: circle;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#accordion ul {
+	list-style: none;
+	padding: 0 0 0 0;
+	display: none;
+}
+#accordion ul li{
+	font-weight: normal;
+	cursor: auto;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+#accordion a {
+	text-decoration: none;
+}
+#accordion a:hover {
+	text-decoration: underline;
+}
+
+</STYLE>
+</HEAD>
+<BODY>
+<center>
+<H2>Adiabatic Calorimetry</H2>
+<br>
+<p>
+The objective of this experiment is to demonstrate students the heat of mixing phenomena for binary solutions and the accurate determination of its value using adiabatic calorimeter. 
+</p>
+<br>
+<ul id="accordion">
+	<li>What is calorimetry?</li>
+	<ul>
+		<li>Calorimetry is the science of measuring the heat of chemical reactions or physical changes. It is performed using calorimeter.</li>
+
+	</ul>
+	<li>What is the water equivalent of calorimeter?</li>
+	<ul>
+		<li>The Water equivalent of calorimeter or calorimeter constant is product of mass of calorimeter setup and its specific heat thus it is  defined as amount of heat absorbed by calorimeter setup for 1 degree rise in temperature. This value is constant for particular calorimeter setup.</li>
+	</ul>
+	<li>What is an ideal solution and a non ideal solution ?</li>
+	<ul>
+		<li>An Ideal solution is a solution in which there is no change in enthalpy or volume after mixing. While non ideal solution is associated with change in enthalpy or volume. Non ideality is caused by the interactions between unlike molecules in a solution.</li>
+	</ul>
+
+
+	<li>What is heat of mixing ?</li>
+	<ul>
+		<li>Heat of mixing or excess enthalpy is difference in enthalpy of solution to enthalpies of constitute components in pure state at constant pressure and temperature. In this experiment we employ adiabatic calorimeter to measure heat of mixing. Any heat evolved or absorbed during mixing will be given or taken from solution it self. Thus temperature difference is can be used  to calculate heat of mixing.   </li>
+	</ul>
+
+
+	
+</ul>
+<br>
+<br>
+<a href= cal1.php?mode=><img border=0 src="next.jpg"></a>
+</center>
+</BODY>
+<SCRIPT>
+$("#accordion > li").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion > ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});
+
+$('#accordion > ul:eq(0)').show();
+
+</SCRIPT>
+</HTML>

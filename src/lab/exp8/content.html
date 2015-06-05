@@ -1,0 +1,649 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="experiment">
+        <!-- The Experiment Document Container-->
+        <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+        <header class="default" id="experiment-header">
+            <div class="logo" id="experiment-header-logo">
+            <!-- Enclose the logo image of your lab or write it in 
+      text-->
+            <img src="../images/logo.jpg"></div>
+
+            <div class="heading" id="experiment-header-heading">
+                <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+                <a href="../index.html">Chemical Engineering Lab</a>
+            </div><!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+        </header><!-- The lab article is the main content area where all the 
+  experiment content sits-->
+
+        <article id="experiment-article">
+            <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+
+            <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+            <header class="heading" id="experiment-article-heading">
+                Heat transfer in a double pipe heat exchanger
+            </header><!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+
+            <nav class="default" id="experiment-article-navigation">
+                <ul id="experiment-article-navigation-menu">
+                 
+                </ul>
+            </nav><!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+
+            <div id="experiment-article-sections">
+                <!-- First section of the article-->
+
+                <section id="experiment-article-section-1">
+                    <div class="icon" id="experiment-article-section-1-icon">
+                    <!-- Enclose the icon image of your lab -->
+                    <img src="../images/introduction.jpg"></div>
+                    <!-- The heading for the section can be enclosed in a div tag. -->
+                    <p>&nbsp;</p>
+
+                  <div class="heading" id="experiment-article-section-1-heading">
+                        Aim
+                  </div><!-- Write the section content inside a paragraph element, You can also include images with &lt;img&gt; tag -->
+
+                  <div class="content" id="experiment-article-section-1-content">
+                        
+                  <div class="divContent">
+
+                  <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+        <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91"><span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                   Back To Experiment List</span></a></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><!-- p { margin-bottom: 0.21cm; } --></p>
+
+    <p>The object of this experiment is:-</p>
+
+     <p>&nbsp;</p>
+
+   <p style="margin-bottom: 0cm;"><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. To determine the overall heat transfer coeffcient making use of logarithmic mean temperature difference. From overall heat transfer coeffcient, determine the individual film heat transfer coefficient and verify the Seider-Tate equation for laminar flow heat transfer.</span></p>
+
+  <p style="margin-bottom: 0cm;"><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. To determine the overall heat transfer coeffcient making use of logarithmic mean temperature difference. From overall heat transfer coeffcient, determine the individual film heat transfer coeffcients and verify the Dittus-Boelter equation for turbulent flow heat transfer.<br></span></p>
+
+   
+      <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+      <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+      <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+      <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+                            <p><span style=
+                            "font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(0, 0, 0);">
+                            <br></span></p>
+                        </div>
+                    </div>
+                </section><!-- Second section of the article-->
+
+                <section id="experiment-article-section-2">
+                    <div class="icon" id="experiment-article-section-2-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                    <img src="../images/theory.jpg"></div>
+                    <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+                    <p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-2-heading">
+                        Pre Test
+                    </div><!-- Write the section content inside a paragraph 
+        element, we can also include images with &lt;img&gt; tag -->
+
+                    <div class="content" id=
+                    "experiment-article-section-2-content">
+                        <div class="divQuiz">
+                            <div id="displayQuiz">
+                                <form id="form11" method="post" name="form11">
+                                    <table border="0" style="width:100%">
+                                        <tr>
+                                            <td valign="top" width="2%"></td>
+
+                                            <td style=
+                                            "font-weight: bold; vertical-align: top; width: 1%"
+                                            width="5%"><span id=
+                                            "questionNum">1)</span></td>
+
+                                            <td colspan="2" style=
+                                            "vertical-align:top;" width="70%">
+                                            <span id="question">Transducer is a
+                                            device</span></td>
+
+                                            <td colspan="3" width="3%">
+                                            &nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>&nbsp;</td>
+
+                                            <td>&nbsp;</td>
+
+                                            <td colspan="5" width="80%">
+                                                <table align="left" border="0"
+                                                width="100%">
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans5998" name="ans0"
+                                                        type="radio" value=
+                                                        "5998"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans5998">that converts
+                                                        one form of energy into
+                                                        another
+                                                        form</label></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans5999" name="ans0"
+                                                        type="radio" value=
+                                                        "5999"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans5999">has mostly
+                                                        eletrical
+                                                        output</label></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans6000" name="ans0"
+                                                        type="radio" value=
+                                                        "6000"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans6000">with both the
+                                                        above
+                                                        properties</label></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <div id="hint">
+                                        <div id="textHint10" style=
+                                        "padding-left:50px; color:#F00;"></div>
+                                    </div>
+                                    <hr id="horizontalLine">
+
+                                    <table border="0" style="width:100%">
+                                        <tr>
+                                            <td valign="top" width="2%"></td>
+
+                                            <td style=
+                                            "font-weight: bold; vertical-align: top; width: 1%"
+                                            width="5%"><span id=
+                                            "questionNum">2)</span></td>
+
+                                            <td colspan="2" style=
+                                            "vertical-align:top;" width="70%">
+                                            <span id="question">Temperature is
+                                            measure of degree of -------- of a
+                                            substance.</span></td>
+
+                                            <td colspan="3" width="3%">
+                                            &nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>&nbsp;</td>
+
+                                            <td>&nbsp;</td>
+
+                                            <td colspan="5" width="80%">
+                                                <table align="left" border="0"
+                                                width="100%">
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans6001" name="ans1"
+                                                        type="radio" value=
+                                                        "6001"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans6001">Hotness</label></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans6002" name="ans1"
+                                                        type="radio" value=
+                                                        "6002"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans6002">Coldness</label></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="right" id=
+                                                        "textAnsChoice" style=
+                                                        "vertical-align:middle"
+                                                        width="32px"><input id=
+                                                        "ans6003" name="ans1"
+                                                        type="radio" value=
+                                                        "6003"></td>
+
+                                                        <td id="textAnsChoice"
+                                                        style=
+                                                        "padding-left:3px;">
+                                                        <label for=
+                                                        "ans6003">Hotness or
+                                                        Coldness</label></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <div id="hint">
+                                        <div id="textHint11" style=
+                                        "padding-left:50px; color:#F00;"></div>
+                                    </div>
+                                    
+                                    <div id="hint">
+                                        <div id="textHint14" style=
+                                        "padding-left:50px; color:#F00;"></div>
+                                    </div>
+                                    <hr id="horizontalLine">
+                                    <input align="middle" id="loadTime" name=
+                                    "loadTime" type="hidden" value=
+                                    "1379688870/"><br>
+
+                                    <div style="padding-left:40px;">
+                                        <input id="submit1" name="submit1"
+                                        onclick="get_radio_value();" style=
+                                        "width:8%;" type="submit" value=
+                                        "&nbsp;Submit&nbsp;">&nbsp;&nbsp;<input id="cancel1"
+                                        name="cancel1" style="width:8%;" type=
+                                        "reset" value="&nbsp;Cancel&nbsp;">
+                                    </div>
+                                </form><br>
+                            </div><br>
+                        </div>
+                    </div>
+                </section>
+
+         <section id="experiment-article-section-3">
+         	<div class="icon" id="experiment-article-section-3-icon">
+             <!-- Enclose the icon image of your lab. -->
+            <img src="../images/objective.jpg"></div>
+                <p>&nbsp;</p>
+
+            <div class="heading" id="experiment-article-section-3-heading">Theory</div>
+
+            <div class="content" id="experiment-article-section-3-content">
+            <div class="divContent">
+
+			 <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+			 <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+			 <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+                       <p>&nbsp;</p>
+
+                       <h4>Laminar Flow</h4>
+             <p class="PreformattedText" align="justify">
+             <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+          In a heat exchanger, heat is transferred from hot fluid to cold fluid through metal wall, which generally separates these two fluids. Heat transfer through metal wall is always by conduction while on both sides of metal wall it is generally by convection. Generally resistance offered to heat transfer by the metal wall is negligible as compared to resistance offered by convection. The wall temperature is always between local temperatures of the two fluids. The actual value depends upon individual film heat transfer coeffcient on either sides.</span></p>
+          <p>&nbsp;</p>
+          <p class="PreformattedText" align="justify">
+          <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
+			At low Reynold's number (Re < 2100), the flow pattern is laminar and the fluid flows in an ordered manner along generally parallel "Filament like" streams which do not mix. It follows that in this type of flow, that the heat transferred to and through the fluid is essentially by conduction.</span></p>
+			<p>&nbsp;</p>
+			
+		  <p class="PreformattedText" align="justify">
+          
+          <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
+
+		 Laminar flow generally happens when dealing with small pipes , low flow velocities and with highly viscous fluids. At low velocities fluids tend to flow without lateral mixing,and adjacent layers slide past one another like playing cards. There are neither cross currents nor eddies. Laminar flow can be regarded as a series of liquid cylinders in the pipe, where the innermost parts flow the fastest, and the cylinder touching the pipe isn't moving at all.</span> </p> <p>&nbsp;</p>
+
+           <p align="center"><img src="images/laminar1.PNG" style="height:55px; width:250px;"><br> OR</p>
+
+           <p align="center"><img src="images/laminar2.PNG" style="height:60px; width:250px;"></p>
+            
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
+            Once the heat exchanger material and its geometry is fixed, then the metal wall resistance Δx/KA<sub>lm</sub> becomes constant. Similarly, if the flow rate of cold fluid is fixed and its mean temperature does not differ much for different flow rates of hot fluid, then the resistance by the outside film will remain almost constant. Thus, the overall heat transfer coeffcient will depend upon the value of inside film heat transfer coeffcient alone. If flow through inner tube is in the laminar flow regime, then Sieder-Tate equation can be used to predict the inside film heat transfer coeffcient.
+            </span> </p> 
+            <p class="PreformattedText" align="center">Nu=1.86(Re)<sup>1/3</sup>(Pr)<sup>1/3</sup></p>
+            <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            If the bulk mean temperature does not differ much for different flow rates, then all the physical properties will remain nearly the same and equation can be re-written as:
+           </span> 
+           </p> 
+           <p class="PreformattedText" align="center">Nu=constant*(velocity)<sup>1/3</sup></p>
+           
+           <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            Substituting equation, one can write it as:
+           </span> 
+           </p>
+
+           <p>&nbsp;</p>
+           <p align="center">
+               <img src="images/laminar5.PNG" style="height:44px; width:250px;">
+           </p>
+
+           <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            Thus, the graph of 1/Ui vs 1/u1/3 (which is known as Wilson plot) should be a straight line with a slope equal to constant1 and intercept equal to constant2. From this graph, inside film heat transfer coefficient can be calculated which can be used to verify Sieder-Tate equation.
+           </span> 
+           </p>
+           <p>&nbsp;</p> <p>&nbsp;</p>
+
+           <h4>Turbulent Flow</h4>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+           In a heat exchanger, heat is transferred from hot fluid to cold fluid through metal wall which generally separates these two fluids. Heat transfer through metal wall is always by conduction while on both sides of metal wall it is generally by convection. Generally resistance offered to heat transfer by the metal wall is negligible as compared to resistance offered by convection. The wall temperature is always between local temperatures of the two fluids. The actual value depends upon individual film heat transfer coefficient on either sides.
+           </span> 
+           </p> 
+           <p>&nbsp;</p>
+           <p>
+               At higher Reynold's number (Re > 10, 000), the ordered flow pattern of laminar flow regime is replaced by randomly moving eddies thoroughly mixing the fluid and greatly assisting heat transfer. However, this enhancement of film heat transfer coeffcient is accompanied by much higher pressure drop which demands higher pumping power. Thus, although desirable, turbulent flow is usually restricted to fluids of low viscosity. In turbulent flow, the fluid moves erratically in the form of cross currents and eddies. Turbulent flow happens in general at high flow rates and with larger pipes. When heat is transferred through resistances in series, the total resistance to heat transfer is the sum of individual resistances in series. Thus, for heat exchanger, one can write,
+           </p>
+           <p>&nbsp;</p>
+           <p align="center"><img src="images/laminar1.PNG" style="height:55px; width:250px;"><br> OR</p>
+
+           <p align="center"><img src="images/laminar2.PNG" style="height:60px; width:250px;"></p>
+           <p>&nbsp;</p>
+           <p>
+
+           Once the heat exchanger material and its geometry is fixed, then the metal wall resistance (Δx/KAlm) becomes constant. Similarly, if the flow rate of cold fluid is fixed and its mean temperature does not differ much for different flow rates of hot fluid, then the resistance by the outside film will remain almost constant. Thus, the overall heat transfer coefficient will depend upon the value of inside film heat transfer coefficient alone. If flow through inner tube is in the turbulent flow regime, then Ditturs-Boelter equation can be used to find out inside film heat transfer coefficient.</p>
+           <p>&nbsp;</p>
+           <p>Nu=0.023(Re)<sup>0.8</sup>(Pr)<sup>n</sup></p>
+
+           <p>&nbsp;</p>
+           <p>
+           If the bulk mean temperature does not differ much for different flow rates, then all the physical properties will remain nearly the same and equation can be re-written as: </p>
+
+           <p>&nbsp;</p>
+           <p>Nu=constant*(velocity)<sup>0.8</sup></p>
+
+            <p>&nbsp;</p>
+           <p>
+           Substituting the above equation, we get: </p>
+
+           <p>&nbsp;</p>
+           <p align="center"><img src="images/turbulant3.PNG" style="height:44px; width:250px;"></p>
+
+           <p>&nbsp;</p>
+           <p>
+           Thus, the graph of 1/U<sub>i</sub> vs 1/u<sup>0.8</sup> (which is known as Wilson plot) should be a straight line with a slope equal to constant1 and intercept equal to constant2. From this graph, inside film heat transfer coefficient can be calculated which can be used to verify Dittus-Boelter equation.</p>
+           </div> </div> 
+
+        </section>
+
+        <section id="experiment-article-section-5">
+        <div class="icon" id="experiment-article-section-5-icon">
+        <!-- Enclose the icon image of your lab.-->
+        <img src="../images/manual.jpg"></div>
+        <p>&nbsp;</p>
+
+        <div class="heading" id="experiment-article-section-5-heading"> Procedure </div>
+
+        <div class="content" id="experiment-article-section-5-content">
+        
+        <div class="divContent">
+
+        <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+                       <p>&nbsp;</p>
+
+                       <h4>Laminar Flow</h4>
+
+           <p>
+               
+        1) Note down the Zero Error in digital Thermometers. Set the heater temperature.</p>
+        <p>&nbsp;</p>
+           <p>
+               
+        2) Adjust the volumetric flow rate of water to 400 lph.</p>
+        <p>&nbsp;</p>
+           <p>
+               
+        3) Adjust the flow rate of hot fluid in laminar region.</p>
+        <p>&nbsp;</p> 
+           <p>
+               
+        4) Measure the time taken to cross 10 cm mark using stopwatch and close valve.</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        5) Note the inlet-outlet hot-cold fluid temperature after steady state</p>
+        <p>&nbsp;</p>
+           <p>
+               
+        6) Repeat the above steps to get 8 sets of readings by increasing the flow rate.</p>
+        <p>&nbsp;</p> <p>&nbsp;</p>
+
+        <h4>Turbulent Flow</h4>
+           <p>
+              
+        1) Switch on the temperature indicator & controller.</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        2) Measure the inlet and outlet temperature for both the pipes for zero error.</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        3) Check the set point of the controller around 65 °C.</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        4) Start the hot fluid circulation pump.</p>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        5) Keep the flow rate of cold fluid constant at around 400 Lph</p>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        6) Adjust the flow rate of hot fluid (between 400 Lph to 900 Lph to maintain Re>10,000)</p>
+        <p>&nbsp;</p>
+
+         <p>&nbsp;</p>
+           <p>
+               
+        7) Once steady state is reached note down the inlet and outlet temperatures of hot and cold fluid.</p>
+        <p>&nbsp;</p>
+
+         <p>&nbsp;</p>
+           <p>
+               
+        8) Repeat the experiment for at least 6 different flow rates of hot fluid.</p>
+        <p>&nbsp;</p>
+           
+
+    </div>
+                                
+    </div><br>
+                </section>
+
+                <section id="experiment-article-section-10">
+                    <div class="icon" id="experiment-article-section-10-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+                    <p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-10-heading">
+                        Dcumentation
+                    </div>
+                    <div class="divContent">
+                    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+                       <p>&nbsp;</p>
+                    <div class="content" id="experiment-article-section-10-content">
+                    </div>
+                </section>
+
+                <section id="experiment-article-section-4">
+                    <div class="icon" id="experiment-article-section-4-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/simulation.jpg"></div>
+                        <p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-4-heading">
+                        Simulator
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-4-content">
+                        <div class="divContent">
+                        <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+                            <p><a href="htl/htl.php"
+                            target="_blank">Click here for Simulator</a></p>
+                        </div>
+                    </div>
+                </section>
+
+                
+    <section id="experiment-article-section-8">
+    <div class="icon" id="experiment-article-section-8-icon">
+    <!-- Enclose the icon image of your lab.-->
+    <img src="../images/quizzes.jpg"></div> <p>&nbsp;</p>
+
+    <div class="heading" id="experiment-article-section-8-heading">Reference </div>
+
+    <div class="content" id="experiment-article-section-8-content">
+                        
+    <div class="divContent">
+                           <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+    <p class="PreformattedText"><b style="">
+    <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+        Books</span></b><span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>:</span></p>
+                            <p>&nbsp;</p>
+                            <p class="MsoNormal"> </p>
+
+                            <p class="MsoNormal" style=
+                            "text-indent: 0.25in; line-height: normal;">
+                            <span lang="EN-IN" style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            1. </span></p>
+
+                            <p class="MsoNormal" style="line-height: normal;">
+                            <span style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            &nbsp;</span></p>
+
+                            <p class="MsoNormal" style=
+                            "margin-left: 0.25in; line-height: normal;">
+                            <span lang="EN-IN" style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            2.  
+                            </span></p>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experiment-article-section-9">
+                    <div class="icon" id="experiment-article-section-9-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+                        <p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-9-heading">
+                        FAQ
+                    </div>
+
+    <div class="content" id="experiment-article-section-9-content">
+<div class="divContent">
+    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+    
+    </section>
+            </div>
+        </article>
+	
+
+        <footer  class="footer">
+            <!-- Put the content here -->
+            <div style="margin-left:40%; margin-right:40% ">
+            <a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+            </div>
+      </footer> 
+    </div>
+</body>
+</html>

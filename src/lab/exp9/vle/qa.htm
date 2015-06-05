@@ -1,0 +1,124 @@
+<html>
+<head>
+<SCRIPT language="JavaScript"
+        type="text/javascript">
+<!--
+
+function checkAnswer(quizForm,
+             
+                     urlRight,
+                     urlWrong)
+{
+
+
+ element = document.getElementById('Ar').style;
+    element.display = 'none';
+element = document.getElementById('Br').style;
+    element.display = 'none';
+
+element = document.getElementById('Cr').style;
+    element.display = 'none';
+element = document.getElementById('Aw').style;
+    element.display = 'none';
+element = document.getElementById('Bw').style;
+    element.display = 'none';
+element = document.getElementById('Cw').style;
+    element.display = 'none';
+
+
+
+
+
+  var s = "?";
+
+  var result = "A";
+
+  var i = 0;
+  for(;i<quizForm.elements.length;i++)
+  {
+    if(("cc" ==
+        quizForm.elements[i].name) &&
+       (quizForm.elements[i].checked))
+    {
+      s = quizForm.elements[i].value;
+    }
+  }
+
+  // no choice was selected
+  //
+  if("?" == s)
+  {
+    alert("Please make a selection.");
+    return false;
+  }
+
+  // check if we have the correct
+  // choice selected
+  //
+  if(s == result)
+  {
+   
+    img =s+"r";
+	 element = document.getElementById(img).style;
+    element.display = 'inline';
+  }
+  else
+  {
+
+    img =s+"w";	
+	
+    element = document.getElementById(img).style;
+    element.display = 'inline';
+  }
+
+  // return "false" to indicate not to
+  // submit the form.
+  // change this to "true" if the form
+  // "action" is valid,
+  // i.e. points to a valid CGI script
+  //
+  return false;
+}
+
+
+
+function showHide(_myObj,_action) {
+    var _myTableObj = document.getElementById((_myObj.parentNode.id).substring(0,(_myObj.parentNode.id).indexOf('_')));
+    if (_action == 'show') {
+        _myTableObj.style.display = 'block';
+        _myObj.parentNode.innerHTML = '<a href="#" onclick="showHide(this,\'hide\');">Hide Table</a>';
+    }
+    if (_action == 'hide') {
+        _myTableObj.style.display = 'none';
+        _myObj.parentNode.innerHTML = '<a href="#" onclick="showHide(this,\'show\');">Show Table</a>';
+    }
+}
+
+//-->
+</SCRIPT>
+</head>
+<body>
+From the illustration of the flow pattern of the dye as shown, what
+can be inferred about the nature of the flow? Check the
+appropriate box below
+
+<FORM method="POST"
+      onSubmit=
+      "return checkAnswer(this, 
+      'correct.htm', 'wrong.htm');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+Laminar <img style="display:none;" id="Ar" src="rg.png"><img id="Aw" style="display:none;" src="wg.png"><BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+Transition <img style="display:none;"  id="Br" src="rg.png"><img id="Bw" style="display:none;" src="wg.png"><BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+Turbulent <img style="display:none;"  id="Cr" src="rg.png"><img id="Cw" style="display:none;" src="wg.png"><BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+</body>
+</html>

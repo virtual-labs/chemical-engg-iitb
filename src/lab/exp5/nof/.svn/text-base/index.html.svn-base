@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<TITLE>Virtual labs project</TITLE>
+<STYLE>
+body, input{
+	font-family: Calibri, Arial;
+}
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 600px;
+}
+#accordion li{
+	display: block;
+	background-color: #FF9927;
+	font-weight: bold;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	list-style: circle;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#accordion ul {
+	list-style: none;
+	padding: 0 0 0 0;
+	display: none;
+}
+#accordion ul li{
+	font-weight: normal;
+	cursor: auto;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+#accordion a {
+	text-decoration: none;
+}
+#accordion a:hover {
+	text-decoration: underline;
+}
+
+</STYLE>
+</HEAD>
+<BODY>
+<center>
+<H2>Fluid flowing through a pipe</H2>
+<br>
+<h4>
+In the following exercise you will learn to visually identify the different flow regimes of a fluid flowing through a pipe. You will also learn what is friction factor of a given pipe and how is it related to Reynolds number.</h4>
+<ul id="accordion">
+	<li>Did you know there are 3 different flow regimes?
+Can you name any?</li>
+	<ul>
+		<li>Fluid flowing in pipes has two primary flow patterns.It can be either laminar when all of the fluid particles flow in parallel lines at even velocities and it can be turbulent when the fluid particles have a random motion interposed on an average flow in the general direction of flow.There is also a critical zone when the flow can be either laminar or turbulent or a mixture, this regime is known as the transition regime.</li>
+
+	</ul>
+	<li>What determines the nature of flow?</li>
+	<ul>
+		<li>It has been proved experimentally by Osborne Reynolds that the nature of flow depends on the mean flow velocity (v), the pipe diameter (D), the density (ρ) and the fluid viscosity Fluid Viscosity( &#956;). A dimensionless variable called the Reynolds number which is simply a ratio of the fluid dynamic forces and the fluid viscous forces , is used to determine what flow pattern will occur.</li>
+	</ul>
+	<li>How do we define the Reynolds number for pipe flow?</li>
+	<ul>
+		<li>Reynold’s number for a cylindrical closed conduit (pipe) is defined as,
+
+
+	Self-exercise: Find out how is Reynolds number defined for different cross-sectional geometries of closed conduits. Also, find out how is it defined when the conduit is an open duct.</li>
+	</ul>
+
+
+	<li>How are the different flow regimes classified from the Reynolds number?</li>
+	<ul>
+		<li>The flow in pipes is considered laminar if the relevant Reynolds number is less than 2000, and it is turbulent if the Reynolds number is greater than 4000.  Between these two values there is the critical zone (transition region). In actuality, transition region is not a distinct flow regime but is a regime where the nature of flow is uncertain, it could be either laminar or turbulent of a mix of both.</li>
+	</ul>
+
+
+	<li>Why should we exert a continuous force to keep the fluid flowing at a steady velocity? </li>
+	<ul>
+		<li>It is inevitable for a fluid to lose head as it flows through a pipe. The factors that cause head lose can be viscosity of the fluid, entrance effects such as fluid moving through pipe-joints where there is sharp expansion or contraction in the cross-section, elbows and bends in pipes etc. </li>
+	</ul>
+</ul>
+<br>
+<br>
+<a href="nof1.php"><img border=0 src="img/next.jpg"></a>
+</center>
+</BODY>
+<SCRIPT>
+$("#accordion > li").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion > ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});
+
+$('#accordion > ul:eq(0)').show();
+
+</SCRIPT>
+</HTML>

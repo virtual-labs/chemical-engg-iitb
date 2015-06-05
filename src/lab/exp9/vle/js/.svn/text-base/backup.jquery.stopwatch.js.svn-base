@@ -1,0 +1,73 @@
+(function($) {
+	jQuery.fn.stopwatch = function() {
+		var clock = $(this);
+		var timer = 0;
+		
+		clock.addClass('stopwatch');
+		
+		// This is bit messy, but IE is a crybaby and must be coddled. 
+		clock.html('<div class="display"><span class="hr">00</span>:<span class="min">00</span>:<span class="sec">00</span></div>');
+		clock.append('<input type="button" class="start" value="Start" />');
+		clock.append('<input type="button" class="stop" value="Stop" />');
+		clock.append('<input type="button" class="reset" value="Reset" />');
+		
+		// We have to do some searching, so we'll do it here, so we only have to do it once.
+		var h = clock.find('.hr');
+		var m = clock.find('.min');
+		var s = clock.find('.sec');
+		var start = clock.find('.start');
+		var stop = clock.find('.stop');
+		var reset = clock.find('.reset')
+		
+		stop.hide();
+
+		start.bind('click', function() {
+			timer = setInterval(do_time, 1000);
+			stop.show();
+			start.hide();
+		 document.getElementById('b').style.display = 'inline';
+		document.getElementById('be').style.display = 'none';
+   
+		});
+		
+		stop.bind('click', function() {
+			clearInterval(timer);
+			timer = 0;
+			start.show();
+			stop.hide();
+		});
+		
+		reset.bind('click', function() {
+			clearInterval(timer);
+			timer = 0;
+			h.html("00");
+			m.html("00");
+			s.html("00");
+			stop.hide();
+			start.show();
+			document.getElementById('be').style.display = 'inline';
+			document.getElementById('b').style.display = 'none';
+		});
+		
+		function do_time() {
+			// parseInt() doesn't work here...
+			hour = parseFloat(h.text());
+			minute = parseFloat(m.text());
+			second = parseFloat(s.text());
+			
+				second = second +10;  // Increase clock speed
+			
+		
+			s.html("0".substring(second >= 10) + second);
+
+			document.time.timer.value= "".substring(second >= 10) + second ;
+			time = "".substring(second >= 10) + second ;
+
+			document.time.timer.value= "".substring(second >= 10) + second ;
+							
+			
+			document.volu.vol.value  = Math.round(document.volu.acc.value*document.time.timer.value);
+			
+		}
+	}
+})(jQuery);
