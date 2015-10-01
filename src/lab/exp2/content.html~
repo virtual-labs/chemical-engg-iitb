@@ -41,7 +41,7 @@ edit -->
             <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
 
             <header class="heading" id="experiment-article-heading">
-                Two Phase Flow in Horizontal Tubes
+                Gas Liquid Absorption
             </header><!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
 
@@ -60,7 +60,7 @@ edit -->
                     <!-- Enclose the icon image of your lab -->
                     <img src="../images/introduction.jpg"></div>
                     <!-- The heading for the section can be enclosed in a div tag. -->
-                    <p>&nbsp;</p>
+                    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
                   <div class="heading" id="experiment-article-section-1-heading">
                         Aim
@@ -70,21 +70,23 @@ edit -->
                         
                   <div class="divContent">
 
-                            
 
+                           
                             <p><!-- p { margin-bottom: 0.21cm; } --></p>
 
-    <p>The object of this experiment is:-</p>
+    <p>The object of this experiment is to study gas liquid absorption in an absorption column:-</p>
 
      <p>&nbsp;</p>
 
    <p style="margin-bottom: 0cm;"><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. To visually observe the flow pattern of a two phase flow.</span></p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. The reaction of carbon dioxide when it is contacted with sodium hydroxide solution. </span></p>
 
   <p style="margin-bottom: 0cm;"><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. To measure the two phase pressure drop and to compare it to the calculated value  <br></span></p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. To compare the performance of a packed column (continuous process) with a bubble column (semi-batch process).<br></span></p>
 
-   
+   <p style="margin-bottom: 0cm;"><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. To observe the effect of different flow rates on the performance of the two columns.<br></span></p>
+
       <p style="margin-bottom: 0cm;">&nbsp;</p>
 
       <p style="margin-bottom: 0cm;">&nbsp;</p>
@@ -106,7 +108,7 @@ edit -->
                     <img src="../images/theory.jpg"></div>
                     <!-- The heading for the section can be enclosed in a 
         div tag. -->
-                    <p>&nbsp;</p>
+                    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
                     <div class="heading" id="experiment-article-section-2-heading">
                         Pre Test
@@ -321,194 +323,296 @@ edit -->
          	<div class="icon" id="experiment-article-section-3-icon">
              <!-- Enclose the icon image of your lab. -->
             <img src="../images/objective.jpg"></div>
-                <p>&nbsp;</p>
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
             <div class="heading" id="experiment-article-section-3-heading">Theory</div>
 
             <div class="content" id="experiment-article-section-3-content">
-           
+            <div class="divContent">
+
+			
                        <p>&nbsp;</p>
              <p class="PreformattedText" align="justify">
              <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
-          Two phase gas / liquid flow is important in a variety of chemical engineering applications such as the simultaneous transport of the gas and oil in horizontal pipelines or a vertical wells several flow regimes can occur, depending on many factors, including the orientation of the pipe the individual magnitudes of the liquid and gas flow rates and physical properties such as density, surface tension and viscosity. It hence becomes imperative to study the flow regimes and pressure drop characteristics of two phase flow.</span></p>
+          This exercise deals with the mass transfer operation known as gas absorption in which a soluble gas is absorbed from its mixture with an inert gas by means of a liquid in which the solute gas is more or less soluble.</span></p>
           <p>&nbsp;</p>
           <p class="PreformattedText" align="justify">
           <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
-			For horizontal pipes, there are seven principal flow regimes shown in the figure above and which occur successively at ever increasing gas flow rates.</span></p>
+			A common apparatus used in gas absorption is packed tower, an example of which is shown in figure (1). The device consists of a cylindrical column, or tower, equipped with a gas inlet and distributing space at the bottom; a liquid inlet and a distributor at top; gas and liquid outlets at the top and bottom respectively; and a supported mass of inert solid shapes, called tower packing.</span></p>
 			<p>&nbsp;</p>
-			
+			<img src="images/gla4.jpg" style="height:400px; width:370px;">
+            <img src="images/gla5.jpg" style="height:400px; width:370px;">
 		  <p class="PreformattedText" align="justify">
-          <ol>
-              <li>Bubble flow in which the gas is dispersed as small bubbles throughout the liquid which is the continuous phase.<br>
-              <img src="images/2pf1.PNG" style="width:400px; height:115px;">
-              </li>
-              <li>Plug flow which is an intermediate between bubble flow and slug flow</li>
-              <li>Slug flow in which the individual small bubbles have started to coalesce together in the form of slugs. The liquid phase is still continuous.<br>
-              <img src="images/2pf2.PNG" style="width:400px; height:115px;">
-              </li>
-              <li>Stratified flow in which the gas occupies the top half of the pipe and liquid occupies the bottom half.
-              
-              </li>
-              <li>Wavy flow in which the increasing gas flow rate causes ripples to form on the surface of the liquid.<br>
-              <img src="images/2pf3.PNG" style="width:400px; height:115px;">
-              </li>
-              <li>Annular flow in which the fast moving gas stream is now a continuous phase that encompasses central portion of the tube with the liquid forming a relatively thin film on the tube well.</li>
-              <li>Mist flow in which the velocity of the continuous gas phase is so high that it reaches as far as the tube wall and entrains the liquid in the form of droplets.<br>
-              <img src="images/2pf4.PNG" style="width:400px; height:115px;">
-              </li>
-          </ol>
-          </p>
+          
+          <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
 
-          <p class="PreformattedText" align="justify">
-              For vertical pipes, there are five principal flow regimes shown in figure below and which occur successively at ever increasing gas flow rates.
-              <ol>
-                <li>Bubble flow in which the gas is dispersed as small bubbles throughout the liquid which is the continuous phase.</li>
-                <li>Slug flow in which the individual small bubbles have started to coalesce together in the form of slugs. The liquid phase is still continuous.</li>
-                <li>Churn flow which is an intermediate between slug flow and annular flow</li>
-                <li>Annular flow in which the fast moving gas stream is now a continuous phase that encompasses central portion of the tube with the liquid forming a relatively thin film on the tube well.</li>
-                <li>Wispy annular flow in which the velocity of the continuous gas phase is so high that it reaches as far as the tube wall and entrains the liquid in the form of droplets.<br>
-                <img src="images/2pf5.PNG" style="width:141px; height:465px;">
-                <img src="images/2pf6.PNG" style="width:141px; height:465px;"><br>
-                <img src="images/2pf7.PNG" style="width:141px; height:465px;">
-                <img src="images/2pf8.PNG" style="width:141px; height:465px;">
-                <img src="images/2pf9.PNG" style="width:141px; height:465px;">
-                </li>
-              </ol>
-          </p>
+		 The inlet liquid which may be pure solvent or a dilute solution of some solute (may or may not be same gas) in the solvent is distributed over the top of the packing by distributor and, in ideal operation, uniformly wets the surfaces of the packing. The solute containing gas enters the distributing space below the packing and flows upward through the interstices in the packing counter current to the flow of liquid. The packing provides large area of contact between liquid and gas and encourages intimate contact between phases. At ideal steady state condition, for a specified flow rates of liquid and gas phase, the extent of absorption will not changed with passage of time. In case of absorption in semi-batch process as shown in figure (2), the extent of absorption increases with passage of time as more and more gas is passed through the same liquid.</span> </p> <p>&nbsp;</p>
+            
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'> 
+            The absorption column in the experimental setup was packed with raschig rings. They provide a large surface area within the volume of the column for the interaction between liquid and gas and also enhance the contact time between liquid and gas. The liquid phase is preferably sodium hydroxide solution of known concentration (not more than 2 N), enters from the top and the mixture of carbon dioxide and air (inert solvent for gaseous phase), enters from the bottom of the column. Thus we have counter-current flow column.NaOH is passed in excess of the theoretical requirement in the column.
+
+            </span> </p> <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            The reaction which takes place in absorption column and the bubbling pot is:
+           </span> 
+           </p> 
+            <p>&nbsp;</p>
+           <p align="center">
+               <img src="images/gla1.PNG" style="height:30px; width:435px;">
+           </p>
+
+           <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            When the samples from the absorption column and bubbling pot are titrated with HCl, first end-point is obtained using a Phenolphthalein indicator.
+           </span> 
+           </p>
+
+           <p>&nbsp;</p>
+
+           <p align="center">
+               <img src="images/gla2.PNG" style="height:70px; width:435px;">
+           </p>
+
+           <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            Moles of bicarbonate ion are equal to the moles of carbonate ion present. Also, the moles of H+ ion reacted is equal to the sum of moles of OH<sub>-</sub> and CO<sub>3</sub><sup>2</sup>- ions.
+           </span> 
+           </p>
+
+           <p>&nbsp;</p>
+            <p class="PreformattedText" align="justify">
+            <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+            Second end-point is obtained using the Methyl Orange indicator which helps us in determining the total moles of bicarbonate ion (and hence the carbonate ions) present.
+           </span> 
+           </p> 
+           <p>&nbsp;</p>
+           <p align="center">
+               <img src="images/gla3.PNG" style="height:40px; width:435px;">
+           </p>
 
            </div> </div> 
 
         </section>
 
-    <section id="experiment-article-section-11">
-    
-        <div class="icon" id="experiment-article-section-11-icon">
-        <!-- Enclose the icon image of your lab.-->
-        <img src="../images/quizzes.jpg"></div>
-        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <section id="experiment-article-section-11">
+                    <div class="icon" id="experiment-article-section-11-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+                        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
-            <div class="heading" id="experiment-article-section-11-heading">Equipment Details</div>
+                    <div class="heading" id="experiment-article-section-11-heading">
 
-                <div class="content" id="experiment-article-section-11-content">
+                        Equipment Details
+                    </div>
 
-                    <div class="divContent">
+                    <div class="content" id="experiment-article-section-11-content">
 
-                
+            <div class="divContent">
+
+           
                     <ul>
-                        <li>Beaker</li>
-                        <li>Flask</li>
-                        <li>Measuring Cylinder</li>
+                        <li>Packed column</li>
+                        <li>Raschig rings (Packing Materials)</li>
+                        <li>Bubble column</li>
+                        <li>Peristaltic pump</li>
                         <li>Compressor</li>
-                        <li>Manometer</li>
-                        <li>Centrifugal pump</li>
+                        <li>Sodium Hydroxide solution</li>
+                        <li>CO2 (Gaseous Phase)</li>
+                        <li>Dilute HCl</li>
+                        <li>Burette</li>
+                        <li>Pippete</li>
+                        <li>Titration Flask</li>
+                        <li>Beakers</li>
                     </ul>
                     </div>
-                </div>
-    </section>
-
-    <section id="experiment-article-section-5">
+                </section>
+ 
+        <section id="experiment-article-section-5">
         <div class="icon" id="experiment-article-section-5-icon">
         <!-- Enclose the icon image of your lab.-->
         <img src="../images/manual.jpg"></div>
-        <p>&nbsp;</p>
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
         <div class="heading" id="experiment-article-section-5-heading"> Procedure </div>
 
-            <div class="content" id="experiment-article-section-5-content">
+        <div class="content" id="experiment-article-section-5-content">
         
-                <div class="divContent">
+        <div class="divContent">
 
-                    
-                    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
-                    The flow rate for water and is selected by varying the valve positions. Flow rate of water can be measured by the bucket and stopwatch method. The air flow rate can be read from the rotameter. The flow regime that develops in the pipe can be observed and reported. This flow regime can be verified theoretically by studying the graph given in the theory. 
-                    </p>
+        
 
-                    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
-                    As the water and air flows a pressure drop is developed across the pipe which is reflected in a height difference across the manometer. The experimental pressure drop can be calculated.
-                    </p>
-
-                    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
-                    A suitable correlation such as the Lockhart-Martinelli method can be used to calculate the pressure drop theoretically. The correlation is given in the theory.
-                    </p>
-                </div>
-            </div><br>
-    </section>
-
-    
-    <section id="experiment-article-section-10">
-        <div class="icon" id="experiment-article-section-10-icon">
-        <!-- Enclose the icon image of your lab.-->
-        <img src="../images/quizzes.jpg"></div>
+           <p>
+               
+        1) Prepare 20 liter of 1N NaOH solution in a feed tank.</p>
         <p>&nbsp;</p>
-
-        <div class="heading" id="experiment-article-section-10-heading">Dcumentation</div>
-            
-                <div class="content" id="experiment-article-section-10-content">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/SSIyQ5PFra4?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-    </section>
-
-                
-    <section id="experiment-article-section-4">
-        <div class="icon" id="experiment-article-section-4-icon">
-        <!-- Enclose the icon image of your lab.-->
-        <img src="../images/simulation.jpg">
-        </div>
+           <p>
+               
+        2) Check the concentration of the feed solution by titration against 0.1 N HCl. </p>
         <p>&nbsp;</p>
+           <p>
+               
+        3) Fill the bubbling pot with 3 liters of above prepared solution. </p>
+        <p>&nbsp;</p> 
+           <p>
+               
+        4) Check the concentration of the bubbling pot solution by titration against 0.1N HCl. </p>
 
-        <div class="heading" id="experiment-article-section-4-heading">Simulator</div>
+        <p>&nbsp;</p>
+           <p>
+               
+        5) Set the flow rate of NaOH solution to 10 L/H.(you can set any point from slider) </p>
+        <p>&nbsp;</p>
+           <p>
+               
+        6) Set the flow rate of carbon dioxide gas to 90 L/H. (you can set any point from slider) </p>
+        <p>&nbsp;</p>
+           <p>
+              
+        7) Set the flow rate of air to 30 L/H. </p>
 
-        <div class="content" id="experiment-article-section-4-content">
-            <div class="divContent">
-           
-            <p><a href="2pf/2pf1.php" target="_blank">Click here for Simulator</a></p>
-            </div>
-        </div>
-    </section>
+        <p>&nbsp;</p>
+           <p>
+               
+        8) Take sample at 10, 20, 30 minutes from column outlet and bubbling pot outlet. </p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        9) Titrate the sample collected, using phenolphthalein indicator against 0.1N HCl. </p>
+
+        <p>&nbsp;</p>
+           <p>
+               
+        10) Titrate the same sample, using methyl orange indicator against 0.1 N HCl  </p>
+        <p>&nbsp;</p>
+           <p>
+               
+        11) Calculate the balance on NaOH and CO2. </p>
+
+                                    </div>
+                                
+                            </div><br>
+                </section>
+
+                <section id="experiment-article-section-10">
+                    <div class="icon" id="experiment-article-section-10-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+                    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-10-heading">
+                        Dcumentation
+                    </div>
+                    <div class="divContent">
+                  
+                    <div class="content" id="experiment-article-section-10-content">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/6hHC0bUJMbE?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <section id="experiment-article-section-4">
+                    <div class="icon" id="experiment-article-section-4-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/simulation.jpg"></div>
+                        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-4-heading">
+                        Simulator
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-4-content">
+                        <div class="divContent">
+                        
+                        <p><a href="gla/gla1.php" target="_blank">Click here for Simulator</a></p>
+                        </div>
+                    </div>
+                </section>
 
                 
     <section id="experiment-article-section-8">
-        <div class="icon" id="experiment-article-section-8-icon">
-        <!-- Enclose the icon image of your lab.-->
-        <img src="../images/quizzes.jpg"></div> <p>&nbsp;</p>
+    <div class="icon" id="experiment-article-section-8-icon">
+    <!-- Enclose the icon image of your lab.-->
+    <img src="../images/quizzes.jpg"></div> <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
-        <div class="heading" id="experiment-article-section-8-heading">Reference </div>
+    <div class="heading" id="experiment-article-section-8-heading">Reference </div>
 
-            <div class="content" id="experiment-article-section-8-content">
+    <div class="content" id="experiment-article-section-8-content">
                         
-                <div class="divContent">
-             
-                <p class="PreformattedText"><b style="">
-                <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
-                Books</span></b><span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>:
-                </span></p>
-                <p>&nbsp;</p>
-                <p class="MsoNormal"> </p>
-                <p class="MsoNormal" style="text-indent: 0.25in; line-height: normal;">
-                <span lang="EN-IN" style='font-size: 12pt; font-family: "Arial","sans-serif";'>
-                    1. McCabe, W.L., Smith, J.C. and Harriott, P., "Unit Operations of Chemical Engineering", 5th Edition, McGraw Hill International, 1993.</span></p>
-                </div>
-            </div>
+    <div class="divContent">
+                      
+    <p class="PreformattedText"><b style="">
+    <span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+        Books</span></b><span lang="EN-IN" style='font-size: 12pt; font-family: "Verdana","sans-serif";'>:</span></p>
+                            <p>&nbsp;</p>
+                            <p class="MsoNormal"> </p>
+
+                            <p class="MsoNormal" style=
+                            "text-indent: 0.25in; line-height: normal;">
+                            <span lang="EN-IN" style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            1. Treybal, R.E., 1980. Mass-transfer operations, McGraw-Hill. </span></p>
+
+                            <p class="MsoNormal" style="line-height: normal;">
+                            <span style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            &nbsp;</span></p>
+
+                            <p class="MsoNormal" style=
+                            "margin-left: 0.25in; line-height: normal;">
+                            <span lang="EN-IN" style=
+                            'font-size: 12pt; font-family: "Arial","sans-serif";'>
+                            2. McCabe, W.L., Smith, J.C. & Harriott, P., 2005. Unit operations of chemical engineering, McGraw-Hill. 
+                            </span></p>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experiment-article-section-9">
+                    <div class="icon" id="experiment-article-section-9-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+                        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+                    <div class="heading" id="experiment-article-section-9-heading">
+                        FAQ
+                    </div>
+
+    <div class="content" id="experiment-article-section-9-content">
+<div class="divContent">
+    <p class="MsoNormal" style="line-height: 150%; text-align: right;">
+             <a href="http://coep.vlab.co.in/?sub=33&amp;brch=91">
+             <span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                Back To Experiment List</span></a></p>
+        <p><b>Q1.</b> Why packing is required in absorption?<br> <p class="PreformattedText">&nbsp;</p>
+        <p><b>A</b> Packing in absorption column enhances the contact surface between two phases. Also it results in increase in gas pressure drop.<br> <p class="PreformattedText">&nbsp;</p> <p class="PreformattedText">&nbsp;</p>
+
+        <p><b>Q2.</b>How the extent of absorption varies with variation in flow rate of gas?<br> <p class="PreformattedText">&nbsp;</p>
+        <p><b>A</b>  Increase in gas flow rate results increase in absorption but there is an upper limit. This limit is called flooding in which part of liquid phase move upwards due to high pressure of gaseous phase and hence decrease in absorption.<br>
+        <p class="PreformattedText">&nbsp;</p> <p class="PreformattedText">&nbsp;</p>
+        <p><b>Q3.</b>What are the two major types of packing? Which one is more frequently used and why?<br> <p class="PreformattedText">&nbsp;</p>
+        <p><b>A</b>Packings are of two major types, random and regular.<br>
+
+        <p>Random packings are simply dumped into the tower during installation and allowed to fall at random. It offers larger specific surfaces (and larger gas-pressure drop) in the smaller sizes, but they cost less per unit volume in the larger sizes.</p>
+
+        <p>Regular packing is done by stacking the packing materials in regular manner. It offers the advantage of low pressure drop for the gas and greater possible fluid flow rates, usually at the expense of more costly installation than random packing.
+        </p>
+
+        <p>Random packing is more frequently used than regular packing because of its easy low cost installation.</p>
+        <p class="PreformattedText">&nbsp;</p><p class="PreformattedText">&nbsp;</p>
+
+        <p><b>Q4.</b> Why the temperature of column raised during absorption process?<br> <p class="PreformattedText">&nbsp;</p>
+        <p><b>A</b>Absorption is an exothermic process.<br>
+    
     </section>
-
-               
-    <section id="experiment-article-section-9">
-                    
-        <div class="icon" id="experiment-article-section-9-icon">
-        <!-- Enclose the icon image of your lab.-->
-        <img src="../images/quizzes.jpg"></div>
-        <p>&nbsp;</p>
-
-        <div class="heading" id="experiment-article-section-9-heading">FAQ</div>
-
-        <div class="content" id="experiment-article-section-9-content">
-            <div class="divContent">
-           
-    </section>
-
             </div>
-</article>
+        </article>
 	
 
         <footer  class="footer">

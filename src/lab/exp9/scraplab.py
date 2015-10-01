@@ -36,6 +36,7 @@ template=f.read()
 f=open("content.html",'r')
 srchtml=f.read()
 f.close()
+srchtml=srchtml.replace('Back To Experiment List','');
 soup = BeautifulSoup(srchtml, 'html.parser')
 sectionno=soup.find_all('section')
 d=['introduction','theory','objective','experiment','manual','quizzes','further_readings','procedure','hh','ll']
