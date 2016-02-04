@@ -7,8 +7,8 @@
 -Processor Dual core
 
 * Objective
-  - To view the Experiment of the Gel-based Proteomics to Analyze Human Serum Proteome 
-
+  - To view the Experiment of Flow measurement by orificemeter and venturimeter
+    
 * Pre conditions
 
 * Post conditions
