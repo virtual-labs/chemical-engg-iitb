@@ -1,0 +1,28 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view the theory of Flow measurement by orificemeter and venturimeter experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Flow measurement by orificemeter and venturimeter/Flow measurement by orificemeter and venturimeter_01_Usability_smk.org][Flow measurement by orificemeter and venturimeter_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the theory link 
+  2. It should re-direct to the theory page
+
+* Expected result
+  1. Theory page should be opened
+  2. Content should be present with no distortions and Junk characters
+
+* Review/comments
+
+

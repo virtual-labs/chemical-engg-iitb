@@ -1,0 +1,37 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : alphanumerics , special characters and alphabets
+
+* Objective
+  - To simulate the Gas Liquid Absorption experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Gas Liquid Absorption/Gas Liquid Absorption_01_Usability_smk.org][Gas Liquid Absorption_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. a new tab will be opened with simulation process
+  5. Click on next button and give the invalid inputs in the respective fields by giving the values from keyboard  click on next button.
+  6. Enter the invalid inputs in the pressure drop field and click on check button and click on next button
+  7. Enter the invalid inputs in the coefficient field using the scroll bar and click on the submit button
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. An error message should be displayed on the screen
+  5. Home page should be displayed.
+
+* Review/comments
+
+

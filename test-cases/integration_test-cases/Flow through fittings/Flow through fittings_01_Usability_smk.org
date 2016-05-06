@@ -1,0 +1,29 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - Experiment should be easily usable
+
+* Pre conditions
+  1. Refer to the test step id 1
+
+* Post conditions
+  - Nil
+* Test Steps
+  - While testing observe for easiness to use the features of the experiment
+  1. Information to use the experiment
+  2. Navigation
+  3. Look and Feel
+
+* Expected result
+  1. Experiment should be user friendly
+
+* Review/comments
+
+

@@ -1,0 +1,40 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : 1 to 100 (including decimals)
+
+* Objective
+  - To simulate the "Nature of flow" experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Nature of flow/Nature of flow_01_Usability_smk.org][Nature of flow_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. A new tab will be opened with simulation process
+  5. Select the pipe diameter value from the drop down list and enter the pipe length value and click on the submit button and click on the next button
+  6. Give the position value using the scroll bar and click on the next button
+  7. Check the appropriate option and click on the next button
+  8. Click on the start button as the time varies volume also changes , click on the stop button and click on the next button
+  9. Check the appropriate option for the dimension sand enter the values for reynolds no and friction factor  and then click on the next button
+  10. click on the restart button to restart the simulation process
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. Result should be displayed on the screen
+  5. it should redirect to the intial page.
+
+* Review/comments
+
+

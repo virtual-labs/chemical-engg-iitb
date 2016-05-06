@@ -1,0 +1,39 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To simulate the Gas Liquid Absorption experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Gas Liquid Absorption/Gas Liquid Absorption_01_Usability_smk.org][Gas Liquid Absorption_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. A new tab will be opened with simulation process
+  5. Don't enter the values in the respective fields and click on submit button.
+  6. Click on proceed to iteration and click on add phenolpthalene it replaces withperform titration, click on it
+  7. Enter the values in the 1st titration field and click on perform 2nd titration
+  8. Click on add methyl orange and click on proceed titration, enter the values in the field and click on proceed to bubble pot titration
+  9. Repeat 6,7,8 steps again 
+  10. Enter the value in the column field and bubbleport field and click on the check button.
+  11. Click on Home ,Restart and buttons to perform the simulation again
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. An error message should be displayed on the screen as to enter the respective fields
+
+* Review/comments
+
+

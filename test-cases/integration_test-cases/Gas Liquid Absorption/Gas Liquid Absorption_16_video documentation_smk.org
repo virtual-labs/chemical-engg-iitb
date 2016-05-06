@@ -1,0 +1,32 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To watch the video documentation of “Gas Liquid Absorption" experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Gas Liquid Absorption/Gas Liquid Absorption_01_Usability_smk.org][Gas Liquid Absorption_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the documentation link 
+  2. It should re-direct to the documentation page
+  3. Click on the play button
+
+* Expected result
+  1. Documentation page should be opened
+  2. Content should be present with no distortions and Junk characters
+  3. the video documentation should 
+  4. be played
+  5. the video should be clear
+
+* Review/comments
+
+

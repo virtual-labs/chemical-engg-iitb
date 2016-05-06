@@ -1,0 +1,37 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : 16,52,53 (including decimals)
+
+* Objective
+  - To simulate the Flow measurement by orificemeter and venturimeter experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Flow measurement by orificemeter and venturimeter/Flow measurement by orificemeter and venturimeter_01_Usability_smk.org][Flow measurement by orificemeter and venturimeter_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. a new tab will be opened with simulation process
+  5. Click on next button and give the valid inputs in the respective fields by typing the values from keyboard and click on next button.
+  6. Click on the start button as time varies volume variesand click on next button
+  7. Give the valid inputs in the pressure drop field and click on check button and click on next button
+  8. Give the valid inputs in the co-efficient field using the scroll bar and click on the submit button
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. Result should be displayed on the screen
+
+* Review/comments
+
+

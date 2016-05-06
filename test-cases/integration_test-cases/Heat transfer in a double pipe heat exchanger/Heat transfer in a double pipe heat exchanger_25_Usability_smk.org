@@ -1,0 +1,30 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - Experiment should be easily usable
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Heat transfer in a double pipe heat exchanger/Heat transfer in a double pipe heat exchanger_01_Usability_smk.org][Heat transfer in a double pipe heat exchanger_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. While testing observe for easiness to use the features of the experiment
+  2. Information to use the experiment
+  3. Navigation
+  4. Look and Feel
+  5. Speed
+
+* Expected result
+  1. Experiment should be user friendly
+
+* Review/comments
+
+

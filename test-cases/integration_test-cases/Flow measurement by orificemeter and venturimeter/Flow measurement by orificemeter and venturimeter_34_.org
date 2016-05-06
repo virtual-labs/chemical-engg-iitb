@@ -1,0 +1,18 @@
+* Author: 
+* Date Created: 02 May 2016
+* Environment
+
+* Objective
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Flow measurement by orificemeter and venturimeter/Flow measurement by orificemeter and venturimeter_01_Usability_smk.org][Flow measurement by orificemeter and venturimeter_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+
+* Expected result
+
+* Review/comments
+
+

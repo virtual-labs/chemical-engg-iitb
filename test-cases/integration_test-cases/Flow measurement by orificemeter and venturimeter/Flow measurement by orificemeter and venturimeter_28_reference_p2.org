@@ -1,0 +1,31 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To known the referred links of “Flow measurement by orificemeter and venturimeter” experiment are working or not
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Flow measurement by orificemeter and venturimeter/Flow measurement by orificemeter and venturimeter_01_Usability_smk.org][Flow measurement by orificemeter and venturimeter_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the reference link 
+  2. It should re-direct to the reference page
+  3. Click on the referred links shown in the page
+
+* Expected result
+  1. Reference page should be opened
+  2. Content should be present with no distortions and Junk's characters
+  3. Reference links should be present in the page
+  4. A new tab should be opened with the referred link
+
+* Review/comments
+
+

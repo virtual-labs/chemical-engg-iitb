@@ -1,0 +1,31 @@
+* Author: 
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view ,take the pretest and the submit the pretest of “Heat transfer in a double pipe heat exchanger” experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Heat transfer in a double pipe heat exchanger/Heat transfer in a double pipe heat exchanger_01_Usability_smk.org][Heat transfer in a double pipe heat exchanger_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the pretest link 
+  2. It should re-direct to the pretest page with questions and answers
+  3. Select the correct answer using the corresponding radio buttons and Click on the submit button
+
+* Expected result
+  1. pretest page should be opened
+  2. Content should be present with no distortions and Junk's characters
+  3. Result should be displayed with the correct option if the selected option is wrong. 
+  4. If the selected option is correct a message should be displayed that the selected answer is correct and it should be validated with the backend database
+
+* Review/comments
+
+

@@ -1,0 +1,39 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : 1 to 100 (including decimals)
+
+* Objective
+  - To run the simulation of "Hydrodynamics of packed column" experiment with invalid inputs
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Hydrodynamics of packed column/Hydrodynamics of packed column_01_Usability_smk.org][Hydrodynamics of packed column_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. "1.Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. A new tab will be opened with simulation process
+  5. Select the package type using the keyboard and enter the values of pipe diameter,height,operating pressure and click on the submit button
+  6. Don't give the values in the respective fields using the keyboard and click on the submit button
+  7. Don't enter the velocity value and click on the check button.
+  8. Don't enter the gas flooding and loading points and click on the check or next button
+  9. Click on the end or home button"
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. An error message should be displays on the screen
+  5. It should redirects to the home page
+
+* Review/comments
+
+

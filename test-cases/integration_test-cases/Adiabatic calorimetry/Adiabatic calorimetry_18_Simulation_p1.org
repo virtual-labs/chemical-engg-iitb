@@ -1,0 +1,34 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To run the simulation of "Adiabatic calorimetry" experiment with invalid inputs
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Adiabatic calorimetry/Adiabatic calorimetry_01_Usability_smk.org][Adiabatic calorimetry_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. a new tab will be opened with simulation proces
+  5. Enter  temperature,voltage and current values in the respective fields and click on the next button.
+  6. Enter calorimeter value and click on submit answer button
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present
+  3. Content should be present with no distortions and Junk characters the 
+  4. the result should be displayed on the screen
+
+* Review/comments
+
+

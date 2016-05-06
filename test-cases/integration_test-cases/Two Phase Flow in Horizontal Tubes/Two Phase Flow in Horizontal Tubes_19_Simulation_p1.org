@@ -1,0 +1,38 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : 1 to 100 (including decimals)
+
+* Objective
+  - To simulate the Two Phase Flow in Horizontal Tubes
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/chemical-engg-iitb/blob/master/test-cases/integration_test-cases/Two Phase Flow in Horizontal Tubes/Two Phase Flow in Horizontal Tubes_01_Usability_smk.org][Two Phase Flow in Horizontal Tubes_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the simulation link 
+  2. It should re-direct to the simulation page
+  3. Click on the simulator link 
+  4. A new tab will be opened with simulation process
+  5. Select the pipe dia value using the scroll bar and enter the pipe len values and click on submit button 
+  6. Give the values using the scroll bar in the respective fields and click on submit button
+  7. Click on start button as time varies volume value changes and click on next button
+  8. Select a pattern from the drop down list and click on the submit button.
+  9. Enter GG values,GL values and select the flow pattern from the drop down list and click on the submit button
+
+* Expected result
+  1. Simulation page should be opened
+  2. A simulator link should be present in the page
+  3. Content should be present with no distortions and Junk characters 
+  4. Result should be displayed on the screen
+
+* Review/comments
+
+
