@@ -98,7 +98,7 @@ In the following exercises you will learn about Vapor Liquid Equilibrium (VLE)</
 </ul>
 <br>
 <br>
-<a href="index.php?mode=home"><img border=0 src="next.jpg"></a>
+<a href="index.php?mode=home"><img border=0 src="images/next.jpg"></a>
 </center>
 </BODY>
 <SCRIPT>
