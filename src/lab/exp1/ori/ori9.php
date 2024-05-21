@@ -144,7 +144,7 @@ alert("Invalid answer Try again");
 </p>
 </div>
 <div id="content">
-<?
+<?php
 $dummy = $_SESSION['dummyo'];
 
 ?>
@@ -155,7 +155,7 @@ $dummy = $_SESSION['dummyo'];
 Calculate Orifice co-efficient : 
 <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="ares"> 
 <br><br>
-<input type="hidden" value="<? echo $dummy; ?>" name="res" />
+<input type="hidden" value="<?php echo $dummy; ?>" name="res" />
 <input type="button" onClick="check();" VALUE="Submit">
 
 </form>

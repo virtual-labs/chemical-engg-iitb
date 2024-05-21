@@ -110,8 +110,9 @@ Note the volume collected and duration of time for the same.
 </div>
 <div id="rightnav">
 
-<?
+<?php
 $lper = $_POST['lpercent'];
+
 $max_v = 1;
 $Sv=0.000176;
 $knob=$lper/100.0;
@@ -125,8 +126,8 @@ $volcal= $v*$Sv*1000000;
 <img id="be" src="be.jpg">
 <FORM name="volu">
 
-
-<input name=acc type="hidden" value="<? echo $volcal; ?>">
+<?php //echo "lpercent= ".$lper; echo $volcal; ?>
+<input name=acc type="hidden" value="<?php echo $volcal; ?>">
 <h3>Volume collected  <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="vol"> ml</h3>
 </FORM>
 </div>

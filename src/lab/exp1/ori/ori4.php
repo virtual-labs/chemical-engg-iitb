@@ -1,5 +1,6 @@
 <?php
-session_start(); 
+session_start();
+error_reporting(0);
 ?>
 <html lang="en">
 <head>
@@ -156,6 +157,7 @@ $pdrop = $del_P;
 $h2 =  7 + 5 * (rand(0,100000)/100000);
 //$h2 =  7 + 5;
 $h2 = round($h2,1)." cm";
+//$h2 = round($h2,1);
 $h1 = $h2 + $dummy1;
 $h1 = round($h1,1)." cm";
 
@@ -167,7 +169,7 @@ echo "<INPUT style=\"position:relative;bottom:200px;width:120px;height:30px;back
 
 <FORM name="volu" action="ori5.php"  method="post">
  <h2>Record the manometer reading for pressure drop and calculate the same.</h2>
-<h3>Enter the observed pressure drop:	<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="hidden" value="<? echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Enter the observed pressure drop:	<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="hidden" value="<?php echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 
 <input type="image" src="next.jpg" alt="Submit button">
 </FORM>
