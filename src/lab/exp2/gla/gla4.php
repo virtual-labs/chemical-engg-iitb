@@ -130,10 +130,6 @@ document.getElementById('ti').style.display = 'none';
 
 </head>
 <body>
-<?
-
-
-?>
 
 <div id="container">
 <div id="top">
@@ -156,14 +152,14 @@ document.getElementById('ti').style.display = 'none';
 <p>
 <form name=nof>
 
-<?
+<?php
 $vHCl_1_c = $_SESSION['vHCl_1_c'];
 ?>
 
 <br><br>
 <div style="display:none;" id="val">
-<h3>Volume of HCl used in first titration <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $vHCl_1_c; ?>" NAME="vol"> ml</h3></div>
-<input type="hidden" value="<? echo $res; ?>" name="res" />
+<h3>Volume of HCl used in first titration <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $vHCl_1_c; ?>" NAME="vol"> ml</h3></div>
+<input type="hidden" value="<?php echo $res; ?>" name="res" />
 <input type="button" onClick="check();" id="add" VALUE="Add Phenolpthalene">
 <input type="button" style="display:none;" id="ti" onClick="check2();"  VALUE="Perform titration">
 </form>
@@ -176,7 +172,7 @@ $vHCl_1_c = $_SESSION['vHCl_1_c'];
 
 
 <br><br>
-<input type="hidden" value="<? echo $res; ?>" name="res" />
+<input type="hidden" value="<?php echo $res; ?>" name="res" />
 <input type="submit" VALUE="Proceed to 2nd titration ">
 
 </form>

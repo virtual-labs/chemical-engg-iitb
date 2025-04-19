@@ -97,7 +97,7 @@ border-top: 0px solid gray;
   <div id="container">
 
 
-<?
+<?php
 if($_GET['k'])
 {
 $k = $_GET["k"];
@@ -143,7 +143,7 @@ Now that you have determined the value of K, you use that value to determine the
     
     <form name="time" method="post" action="cal2a.php">
 <input name=timer type="hidden" value=""><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
 <input name="cp" type="hidden" ><br>
 <input type="image" src="next.jpg" alt="Submit button">
 </form>

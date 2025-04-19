@@ -115,7 +115,7 @@ Note the volume collected and the duration of time for the same.
 <FORM name="volu">
 
 
-<input name=acc type="hidden" value="<? echo $_SESSION['volcal']; ?>">
+<input name=acc type="hidden" value="<?php echo $_SESSION['volcal']; ?>">
 <h3 style="margin-left:40%">Volume collected  <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="vol"> ml</h3>
 </FORM>
  </div>

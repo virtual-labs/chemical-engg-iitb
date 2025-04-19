@@ -196,7 +196,7 @@ $mes = $mes." + \"".$inv_re.",".$fric."\\n\"";
   g2 = new Dygraph(
     document.getElementById("graphdiv2"),
         "Reynolds No,Friction\n" 
-	<? 
+	<?php 
 	echo $mes; ?>, // path to CSV file
     { fillGraph: true,
 gridLineColor: '#00FF00',
@@ -209,7 +209,7 @@ strokeWidth: 3,
 </script>
 <br><br><br>
 
-<?
+<?php
 
 
 

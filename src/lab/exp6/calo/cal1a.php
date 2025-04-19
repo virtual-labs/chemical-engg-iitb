@@ -152,7 +152,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 include_once("config.inc.php");
 
 $k = $_POST["kal"];
@@ -166,46 +166,46 @@ $v = "10";
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
   date_default_timezone_set('Asia/Calcutta');
 $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("INSERT INTO cal_exp (
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"INSERT INTO cal_exp (
 `eid` ,
 `name` ,
 `i`,
 `v` ,
 `date` 
 )
-VALUES ('','Srikant','$i','$v','$date')") or die("MySQL Login Error: ".mysql_error()); 
+VALUES ('','Srikant','$i','$v','$date')") or die("mysqli Login Error: ".mysqli_error()); 
 
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
 
  {
-mysql_select_db ("$db");
-$stuff = mysql_query("SELECT * FROM `cal_exp` where date='$date'") or die("MySQL Login Error: ".mysql_error()); 
+mysqli_select_db ($cid,$db);
+$stuff = mysqli_query($cid,"SELECT * FROM `cal_exp` where date='$date'") or die("mysqli Login Error: ".mysqli_error()); 
 
-if (mysql_num_rows($stuff) > 0) { 
+if (mysqli_num_rows($stuff) > 0) { 
 
-$row=mysql_num_rows($stuff);
+$row=mysqli_num_rows($stuff);
 
 
-while($row = mysql_fetch_array($stuff))
+while($row = mysqli_fetch_array($stuff))
   {
   $srno=$row['Srno'];
 }
@@ -219,16 +219,16 @@ while($row = mysql_fetch_array($stuff))
  $random = rand($floor, $ceiling);
 $eid = $srno.$random;
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("UPDATE cal_exp
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"UPDATE cal_exp
 SET eid='$eid' 
-WHERE Srno='$srno'") or die("MySQL Login Error: ".mysql_error()); 
+WHERE Srno='$srno'") or die("mysqli Login Error: ".mysqli_error()); 
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
@@ -267,7 +267,7 @@ Cp = specific heat of the water = 4.18x10<sup>3</sup> J/kg/K <br>
 Density of the water = 1000 kg/m<sup>3</sup> <br>
 </center>
 <center>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
 <h3>Enter water equivalent of the calorimeter: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="cal"> J/K</h3>
 <INPUT TYPE="button" onClick="checkK();" VALUE="Submit Answer">
 

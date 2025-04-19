@@ -154,7 +154,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 $k = $_POST["kal"];
 $cp = $_POST["cp"];
 $_SESSION['cp2']=$cp;
@@ -172,14 +172,14 @@ $_SESSION['cp2']=$cp;
 <b>Data :</b><br>
 Density of acetone =  792.5 kg/m<sup>3</sup><br>
 Volume of acetone in flask = 100 ml<br>
-Water equivalent of calorimeter = <? echo $k ?> J/K<br><br>
+Water equivalent of calorimeter = <?php echo $k ?> J/K<br><br>
 <center>
 		
     
     <form name="time">
 <input name=timer type="hidden" value=""><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
-<input name="cp" type="hidden" value="<? echo $cp; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
+<input name="cp" type="hidden" value="<?php echo $cp; ?>"><br>
 <h3>Enter specific heat of acetone : <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="cal"> x10<sup>3</sup> J/kg/K</h3>
 <INPUT TYPE="button" onClick="checkK();" VALUE="Submit Answer">
 

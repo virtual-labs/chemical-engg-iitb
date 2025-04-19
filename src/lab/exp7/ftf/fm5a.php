@@ -224,7 +224,7 @@ include_once("config.inc.php");
 <FORM name="volu" action="fm6.php"  method="post">
  <h2>Calculate and enter the value of the theortical pressure drop,experimental pressure drop and precentage error you have just computed::</h2>
 
-<h3>Experimental pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $res; ?>" NAME="time"> </h3>
+<h3>Experimental pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $res; ?>" NAME="time"> </h3>
 
 <h3>Theortical pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="vol"> </h3>
 

@@ -136,10 +136,18 @@ class users
         return $result;
     }
 
+    // public function getvlexdatamorecount($eid,$qrgy)
+    // {
+    //     $this->onlyRead_Function();
+    //     $result = mysqli_query($this->conn,"SELECT count(x), gy FROM vle_data WHERE eid='$eid' AND gy > '$qrgy' ORDER BY x ASC");
+    //     mysqli_close($this->conn);
+    //     return $result;
+    // }
+
     public function getvlexdatamorecount($eid,$qrgy)
     {
         $this->onlyRead_Function();
-        $result = mysqli_query($this->conn,"SELECT count(x), gy FROM vle_data WHERE eid='$eid' AND gy > '$qrgy' ORDER BY x ASC");
+        $result = mysqli_query($this->conn,"SELECT count(x), gy FROM vle_data WHERE eid='$eid' AND gy > '$qrgy' GROUP BY gy");
         mysqli_close($this->conn);
         return $result;
     }

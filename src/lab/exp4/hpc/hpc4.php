@@ -180,7 +180,10 @@ $P = $_SESSION['p'];
 
 $H = $_SESSION['l'];
 
-
+echo("ptype: ".$ptype);
+echo("<br>Fpd: ".$Fpd);
+echo("<br>P: ".$P);
+echo("<br>H: ".$H);
 
 
 $C3 = 7.4 *pow(10,-8);
@@ -224,6 +227,7 @@ $fs = $ut * pow(($rhog),0.5); //(ft/s) *(lb/ft3)^0.5
 $del_h = $del_h/10;
 		//$dummy=float($del_h)*(1.0+0.1*(random.random()-0.5));
 $dummy=$del_h*(1.0+0.1*(mt_rand(1,50))/100) ;
+echo("delPd: ".$delPd);
 
 $h2 =  7 + 5 * (rand(1,100000)/100000);
 $h1 = $h2 + $dummy;
@@ -251,6 +255,9 @@ echo "pdrop\n".$pdrop;
 $h1 = round($h1,1); 
 /*echo $h1; */
 $h2 = round($h2, 4); 
+
+echo("h1: ".$h1);
+echo("h2: ".$h2);
 echo "<INPUT style=\"position:relative;bottom:200px;width:120px;height:50px;background-color:#D0F18F;color:#53760D;font:24px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;\" TYPE=text VALUE=\"$h1 cm\" NAME=h1>";
 	echo "<img src=mano.jpg>";
 	echo "<INPUT style=\"position:relative;bottom:120px;width:120px;height:50px;background-color:#D0F18F;color:#53760D;font:24px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;\" TYPE=text VALUE=\"$h2 cm\" NAME=h2><br><br>";
@@ -267,7 +274,7 @@ echo "<INPUT style=\"position:relative;bottom:200px;width:120px;height:50px;back
 
 <FORM name="volu" action="hpc5.php"  method="post">
  <h2>Record the manometer reading and calculate</h2>
-<h3>Calculate the pressure drop:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> N/m<sup>2</sup>  <input type="hidden" value="<? echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Calculate the pressure drop:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> N/m<sup>2</sup>  <input type="text" value="<?php echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 
 
 

@@ -160,7 +160,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 if($_GET['k'])
 {
 $k = $_GET["k"];
@@ -188,9 +188,9 @@ $cp2=$_SESSION['cp2'];
     
     <form name="time" method="post" action="cal4a.php">
 <input name=timer type="hidden" value=""><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
-<input name="cp1" type="hidden" value="<? echo $cp1; ?>"><br>
-<input name="cp2" type="hidden" value="<? echo $cp2; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
+<input name="cp1" type="hidden" value="<?php echo $cp1; ?>"><br>
+<input name="cp2" type="hidden" value="<?php echo $cp2; ?>"><br>
 <h3>Enter volume for benzene: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="vol"> ml</h3>
 <h3>Temperature of system :      <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="298.0" NAME="temp" readonly=true> K</h3>
 <img onClick="check();" src="next.jpg" alt="Submit button">

@@ -148,7 +148,7 @@ alert("Invalid answer Try again");
 
 </div>
 <div id="content">
-<?
+<?php
 $gg = $_SESSION['gg'];
 $gl = $_SESSION['gl'];
 $res = $_SESSION['res'];
@@ -161,8 +161,8 @@ $res = $_SESSION['res'];
 <br><br>
 Enter G<sub>G</sub> value: <input style="width:80px;height:30px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" type="text" name="len" />  kg/m<sup>2</sup>s <br /><br>
 Enter G<sub>L</sub> value.: <input style="width:80px;height:30px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" type="text" name="len" />  kg/m<sup>2</sup>s <br /><br>
-<input type="hidden" value="<? echo $gg; ?>" name="gga" />
-<input type="hidden" value="<? echo $gl; ?>" name="gla" />
+<input type="hidden" value="<?php echo $gg; ?>" name="gga" />
+<input type="hidden" value="<?php echo $gl; ?>" name="gla" />
 
 Select the correct observed flow pattern from the above graph : <select name="ans" style="width:150px;height:40px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;">
 <option value="">Select value</option>
@@ -174,9 +174,9 @@ Select the correct observed flow pattern from the above graph : <select name="an
 <option value="bubbly">bubbly</option>
 </select>
 <br><br>
-<input type="hidden" value="<? echo $res; ?>" name="res" />
-<input type="hidden" value="<? echo $gg; ?>" name="ggr" />
-<input type="hidden" value="<? echo $gl; ?>" name="glr" />
+<input type="hidden" value="<?php echo $res; ?>" name="res" />
+<input type="hidden" value="<?php echo $gg; ?>" name="ggr" />
+<input type="hidden" value="<?php echo $gl; ?>" name="glr" />
 
 
 <input type="button" onClick="check();" VALUE="Submit">

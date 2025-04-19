@@ -145,7 +145,7 @@ alert("Invalid answer Try again");
 </div>
 <div id="content">
 <h3>Based on the values of the flow rates selected, typical flow regimes are observed in the pipe. Following is one of them. Select the correct flow regime from the drop down menu</h3>
-<?
+<?php
 $res = $_POST["regime"];
 $_SESSION['res'] = $res;
 if($res =="stra")
@@ -190,7 +190,7 @@ Select the correct observed flow pattern above: <select name="ans" style="width:
 <option value="bubbly">bubbly</option>
 </select>
 <br><br>
-<input type="hidden" value="<? echo $res; ?>" name="res" />
+<input type="hidden" value="<?php echo $res; ?>" name="res" />
 <input type="button" onClick="check();" VALUE="Submit">
 
 </form>

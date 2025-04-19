@@ -256,9 +256,9 @@ $agg_fric = $agg_fric."#".$fric;
 <FORM name="anz" >
  <h2>Calculate and enter the value of the Reynolds number  and Friction factor you have just computed::</h2>
 <h3>a <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="a"> </h3>
-<INPUT TYPE="hidden" VALUE="<? echo $a_res; ?>" name=a_res>
+<INPUT TYPE="hidden" VALUE="<?php echo $a_res; ?>" name=a_res>
 
-<INPUT TYPE="hidden" VALUE="<? echo $b_res; ?>" name=b_res> 
+<INPUT TYPE="hidden" VALUE="<?php echo $b_res; ?>" name=b_res> 
 
 
 
@@ -269,7 +269,7 @@ $agg_fric = $agg_fric."#".$fric;
 </FORM>
 
 
-	 <? echo "<center><a href=../list.php?mode=home><img border=0 src=home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=report2.php?mode=$eid><img border=0 src=download.jpg></a><br><br>&nbsp;&nbsp;&nbsp;<a href=nof2.php?mode=restart><img border=0 src=r.jpg></a></center>"; ?>
+	 <?php echo "<center><a href=../list.php?mode=home><img border=0 src=home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=report2.php?mode=$eid><img border=0 src=download.jpg></a><br><br>&nbsp;&nbsp;&nbsp;<a href=nof2.php?mode=restart><img border=0 src=r.jpg></a></center>"; ?>
 
 
 

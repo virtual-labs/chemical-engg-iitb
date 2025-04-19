@@ -95,7 +95,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 
 
 $t1 = $_POST["t1"];
@@ -128,17 +128,17 @@ $eid = $_SESSION['eid']
 <FORM name="volu">
 
 
-<h3>Temperature  <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $temp; ?>" NAME="vol" readonly=true readonly> K</h3>
+<h3>Temperature  <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $temp; ?>" NAME="vol" readonly=true readonly> K</h3>
 <h3>Current  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="0.5" NAME="i" readonly>amperes</h3>
 <h3>Voltage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="10" NAME="v" readonly>volts</h3>
- <INPUT TYPE="hidden" VALUE="<? echo $t1; ?>" NAME="mf">
- <INPUT TYPE="hidden" VALUE="<? echo $t2; ?>" NAME="t2">
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
- <INPUT TYPE="hidden" VALUE="<? echo $v1; ?>" NAME="v1">
- <INPUT TYPE="hidden" VALUE="<? echo $v2; ?>" NAME="v2">
- <INPUT TYPE="hidden" VALUE="<? echo $hm; ?>" NAME="hm">
- <INPUT TYPE="hidden" VALUE="<? echo $mfr; ?>" NAME="mfr">
- <INPUT TYPE="hidden" VALUE="<? echo $eid; ?>" NAME="mf">
+ <INPUT TYPE="hidden" VALUE="<?php echo $t1; ?>" NAME="mf">
+ <INPUT TYPE="hidden" VALUE="<?php echo $t2; ?>" NAME="t2">
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
+ <INPUT TYPE="hidden" VALUE="<?php echo $v1; ?>" NAME="v1">
+ <INPUT TYPE="hidden" VALUE="<?php echo $v2; ?>" NAME="v2">
+ <INPUT TYPE="hidden" VALUE="<?php echo $hm; ?>" NAME="hm">
+ <INPUT TYPE="hidden" VALUE="<?php echo $mfr; ?>" NAME="mfr">
+ <INPUT TYPE="hidden" VALUE="<?php echo $eid; ?>" NAME="mf">
 
 
 <input name=cp type="hidden" value=""><br>
@@ -154,17 +154,17 @@ $eid = $_SESSION['eid']
     
     <form name="time" method="post" action="cal6.php">
 <input name=timer type="hidden" value=""><br>
-<input name=itemp type="hidden" value="<? echo $temp; ?>"><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
- <INPUT TYPE="hidden" VALUE="<? echo $t1; ?>" NAME="t1">
- <INPUT TYPE="hidden" VALUE="<? echo $t2; ?>" NAME="t2">
+<input name=itemp type="hidden" value="<?php echo $temp; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
+ <INPUT TYPE="hidden" VALUE="<?php echo $t1; ?>" NAME="t1">
+ <INPUT TYPE="hidden" VALUE="<?php echo $t2; ?>" NAME="t2">
 <input name="t3" type="hidden"><br>
 
- <INPUT TYPE="hidden" VALUE="<? echo $v1; ?>" NAME="v1">
- <INPUT TYPE="hidden" VALUE="<? echo $v2; ?>" NAME="v2">
- <INPUT TYPE="hidden" VALUE="<? echo $hm; ?>" NAME="hm">
- <INPUT TYPE="hidden" VALUE="<? echo $mfr; ?>" NAME="mfr">
- <INPUT TYPE="hidden" VALUE="<? echo $eid; ?>" NAME="eid">
+ <INPUT TYPE="hidden" VALUE="<?php echo $v1; ?>" NAME="v1">
+ <INPUT TYPE="hidden" VALUE="<?php echo $v2; ?>" NAME="v2">
+ <INPUT TYPE="hidden" VALUE="<?php echo $hm; ?>" NAME="hm">
+ <INPUT TYPE="hidden" VALUE="<?php echo $mfr; ?>" NAME="mfr">
+ <INPUT TYPE="hidden" VALUE="<?php echo $eid; ?>" NAME="eid">
 
 
 <input type="image" src="next.jpg" alt="Submit button">

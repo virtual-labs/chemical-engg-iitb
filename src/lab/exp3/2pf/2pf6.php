@@ -167,7 +167,7 @@ echo "<INPUT style=\"position:relative;bottom:200px;width:80px;height:30px;backg
 
 <FORM name="volu" action="2pf7.php"  method="post">
  <h2>Record the manometer reading for pressure drop and calculate the pressure drop</h2>
-<h3>Enter the observed pressure drop:	<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="hidden" value="<? echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Enter the observed pressure drop:	<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="hidden" value="<?php echo $pdrop; ?>" name="pdrop" /><INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 <input type="image" src="next.jpg" alt="Submit button">
 </FORM>
 

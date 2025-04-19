@@ -340,7 +340,7 @@ Turbulent <img style="display:none;"  id="cr" src="img/rg.png"><img id="cw" styl
 
 
 
-<INPUT TYPE="hidden" VALUE="<? echo $result; ?>" NAME="result">
+<INPUT TYPE="hidden" VALUE="<?php echo $result; ?>" NAME="result">
 </FORM>
 
 <br><br><a href=nof5.php><img border=0 src="img/next.jpg" style="margin-left:40%"></a>

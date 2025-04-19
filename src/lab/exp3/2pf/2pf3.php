@@ -95,7 +95,7 @@ border-top: 0px solid gray;
 </head>
 <body>
 
-<?
+<?php
 $lperm = $_POST["lmpercent"];
 $lper1 = $_POST["lpercent1"];
 $lper2 = $_POST["lpercent2"];
@@ -226,7 +226,7 @@ Collect the fluid at the outlet into a measuring beaker and time the duration fo
 
 Fix a reasonable duration for collecting the fluid. Very short times may result in significant error and very long time makes the experiment unrealistic.
 Note the volume collected and the duration of time for the same.
-<h3> Air flow rate : <? echo round($air_flow_rate); ?> lph (These values should be stored for further use)</h3>
+<h3> Air flow rate : <?php echo round($air_flow_rate); ?> lph (These values should be stored for further use)</h3>
 </div>
 <div id="rightnav">
 
@@ -235,7 +235,7 @@ Note the volume collected and the duration of time for the same.
 <FORM name="volu">
 
 
-<input name=acc type="hidden" value="<? echo $liquid_flow_rate; ?>">
+<input name=acc type="hidden" value="<?php echo $liquid_flow_rate; ?>">
 <h3>Volume collected  <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="vol"> ml</h3>
 </FORM>
 </div>
@@ -247,7 +247,7 @@ Note the volume collected and the duration of time for the same.
     
     <form name="time" method="post" action="2pf4.php">
 <input name=timer type="hidden" value=""><br>
-<input name=regime type="hidden" value="<? echo $res; ?>"><br>
+<input name=regime type="hidden" value="<?php echo $res; ?>"><br>
 <input type="image" src="next.jpg" alt="Submit button">
 </form>
 

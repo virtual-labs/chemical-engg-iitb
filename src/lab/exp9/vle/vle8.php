@@ -82,7 +82,7 @@
   {
     $row2=mysqli_num_rows($usr2);
     $mes_val ="";
-    while($rows2 = mysqli_fetch_array($row2))
+    while($rows2 = mysqli_fetch_array($usr2))
     {
       $x=$rows2['x'];
       $gy=$rows2['gy'];
@@ -101,8 +101,9 @@
       $count_x1=$row3['cntx'];
     }
   }
-
+  //echo($eid);
   $usr4 = $usr_obj->getvlexdatamorecount($eid,$qrgy);
+  //echo(mysqli_num_rows($usr4));
   if (mysqli_num_rows($usr4) > 0)
   {
     $row4=mysqli_num_rows($usr4);
@@ -110,6 +111,7 @@
     while($row4 = mysqli_fetch_array($usr4))
     {
       $count_x2=$row4['count(x)'];
+      //echo("countx: ".$count_x2);
     }
   }
 
@@ -151,7 +153,9 @@
   }
   //echo "a1: ".$a1. " a2: ".$a2;
   if($a2 == 0)
-  {}
+  {
+    $p=0;
+  }
   else
   {
     $p = abs($a1/$a2);

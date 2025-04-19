@@ -123,25 +123,35 @@ include_once("config.inc.php");
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
   date_default_timezone_set('Asia/Calcutta');
 $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("INSERT INTO experiment (
+mysqli_select_db ($cid,$db);
+//  $result = mysqli_query("INSERT INTO experiment (
+// `eid` ,
+// `name` ,
+// `plen`,
+// `pdia` ,
+// `date` 
+// )
+// VALUES ('','Krishna Mohan','$length','$dia','$date')") or die("mysqli Login Error: ".mysqli_error()); 
+
+
+$result = mysqli_query($cid,"INSERT INTO experiment (
 `eid` ,
 `name` ,
 `plen`,
 `pdia` ,
 `date` 
-)
-VALUES ('','Krishna Mohan','$length','$dia','$date')") or die("MySQL Login Error: ".mysql_error()); 
+) VALUES ('1','Krishna Mohan','$length','$dia','$date')") or die("mysqli Login Error: ".mysqli_error());
+//mysqli_close($cid);
 
 
 
@@ -150,21 +160,24 @@ VALUES ('','Krishna Mohan','$length','$dia','$date')") or die("MySQL Login Error
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
 
  {
-mysql_select_db ("$db");
-$stuff = mysql_query("SELECT * FROM `experiment` where plen='$length' AND date='$date'") or die("MySQL Login Error: ".mysql_error()); 
+mysqli_select_db ($cid,$db);
+// $stuff = mysqli_query("SELECT * FROM `experiment` where plen='$length' AND date='$date'") or die("mysqli Login Error: ".mysqli_error()); 
 
-if (mysql_num_rows($stuff) > 0) { 
+$stuff = mysqli_query($cid,"SELECT * FROM `experiment` where plen='$length' AND date='$date'") or die("mysqli Login Error: ".mysqli_error());
+//mysqli_close($this->conn);
 
-$row=mysql_num_rows($stuff);
+if (mysqli_num_rows($stuff) > 0) { 
+
+$row=mysqli_num_rows($stuff);
 
 
-while($row = mysql_fetch_array($stuff))
+while($row = mysqli_fetch_array($stuff))
   {
   $srno=$row['Srno'];
 }
@@ -178,16 +191,18 @@ while($row = mysql_fetch_array($stuff))
  $random = rand($floor, $ceiling);
 $eid = $srno.$random;
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("UPDATE experiment
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"UPDATE experiment
 SET eid='$eid' 
-WHERE Srno='$srno'") or die("MySQL Login Error: ".mysql_error()); 
+WHERE Srno='$srno'") or die("mysqli Login Error: ".mysqli_error()); 
+
+
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else

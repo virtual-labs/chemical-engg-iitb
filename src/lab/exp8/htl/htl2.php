@@ -106,7 +106,7 @@ border-top: 0px solid gray;
 </div>
 
 <div id="rightnav">
-<?
+<?php
 include_once("config.inc.php");	
 
 	$flag = $_POST["flag"];
@@ -117,20 +117,20 @@ include_once("config.inc.php");
 	$percent = $_POST["percent"];
 	$_SESSION['percent'] = $percent;
 	
-	echo $hft;
-	echo "<br>".$cft;
+	// echo $hft;
+	// echo "<br>".$cft;
 	
 	$rand=mt_rand(5,7);
-	echo "<br>".$rand;
+	//echo "<br>".$rand;
 	
 	$thout=$hft-$rand;
-	echo "<br>".$thout;
+	//echo "<br>".$thout;
 	
 	$rand1=mt_rand(1,2);
-	echo "<br>".$rand1;
+	//echo "<br>".$rand1;
 	
 	$tcout=$cft+$rand1;
-	echo "<br>".$tcout;
+	//echo "<br>".$tcout;
 	
 	
 	
@@ -251,17 +251,17 @@ return $C0;
 }
 
 $eid = $_SESSION['eid'];
-echo "eid ".$eid;
+//echo "eid ".$eid;
 
 
  # Inherit database connection information from variables defined in config.inc.php
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
 
  date_default_timezone_set('Asia/Calcutta');
@@ -269,21 +269,21 @@ $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
+mysqli_select_db ($cid,$db);
 
-$result = mysql_query("insert into htl_datanew (`eid`,`hft`,`cft`,`percent`,`thout`,`tcout`)values ('$eid','$hft','$cft','$percent','$thout','$tcout')") or die("MySQL Login Error: ".mysql_error());
+$result = mysqli_query($cid,"insert into htl_datanew (`eid`,`hft`,`cft`,`percent`,`thout`,`tcout`)values ('$eid','$hft','$cft','$percent','$thout','$tcout')") or die("mysqli Login Error: ".mysqli_error());
 
 # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
  {
 }
 
- /*$result = mysql_query("INSERT INTO htl_data (
+ /*$result = mysqli_query("INSERT INTO htl_data (
 `eid` ,
 `v1` ,
 `v2` ,
@@ -296,13 +296,13 @@ else
 `v9` ,
 `date` 
 )
-VALUES ('$eid','$res[0]','$res[1]','$res[2]','$res[3]','$res[4]','$res[5]','$res[6]','$res[7]','$res[8]','$date')") or die("MySQL Login Error: ".mysql_error()); 
+VALUES ('$eid','$res[0]','$res[1]','$res[2]','$res[3]','$res[4]','$res[5]','$res[6]','$res[7]','$res[8]','$date')") or die("mysqli Login Error: ".mysqli_error()); 
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
@@ -312,19 +312,19 @@ else
 <form action="htl3.php" method="post">
 <table>
 <tr> <td align="right">
-<p style="color:#003366;font:20px/30px cursive;"> Hot fluid outlet temp : </td> <td align="left"><input type="text" style="width:50px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="hft" value="<? echo $thout; ?>" /></h3></p> </td> </tr>
+<p style="color:#003366;font:20px/30px cursive;"> Hot fluid outlet temp : </td> <td align="left"><input type="text" style="width:50px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="hft" value="<?php echo $thout; ?>" /></h3></p> </td> </tr>
 <tr> <td align="right">
-<p style="color:#003366;font:20px/30px cursive;"> Cold fluid outlet temp : </td> <td align="left"> <input type="text" style="width:50px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="cft" value="<? echo $tcout; ?>" /></h3></p> </td> </tr>
+<p style="color:#003366;font:20px/30px cursive;"> Cold fluid outlet temp : </td> <td align="left"> <input type="text" style="width:50px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="cft" value="<?php echo $tcout; ?>" /></h3></p> </td> </tr>
 <tr> <td align="right">
-<p style="color:#003366;font:20px/30px cursive;"> Hot fluid volumetric flow rate : </td> <td align="left"> <input type="text" style="width:116px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="hfflw" value="<? echo $percent; ?>" /></h3></p>
+<p style="color:#003366;font:20px/30px cursive;"> Hot fluid volumetric flow rate : </td> <td align="left"> <input type="text" style="width:116px;height:40px;background-color:#3399FF;color:#003366;font:24px/30px cursive;border:solid 1px #0000FF;" name="hfflw" value="<?php echo $percent; ?>" /></h3></p>
 </p> </td> </tr> </table>
 
-<a href="htl1.php?sys=<? echo $flag;?>&mode=rerun"><img border=0 src=re.jpg></a>
+<a href="htl1.php?sys=<?php echo $flag;?>&mode=rerun"><img border=0 src=re.jpg></a>
 <br>
 <INPUT type="image" name="search" src="next.jpg" border="0"></TD>
 </div>
 <div id="content">
-<?
+<?php
 $sys = $flag;
 
 if($sys=="0")

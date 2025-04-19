@@ -351,20 +351,20 @@ N/m<sup>2</sup> <img style="display:none;"  id="nm2r" src="img/rg.png"><img id="
 
 <INPUT TYPE="RADIO" VALUE="nd" NAME="cc" onClick="checkAnswer1();">
 Dimensionless <img style="display:none;"  id="ndr" src="img/rg.png"><img id="ndw" style="display:none;" src="img/wg.png"><BR>
-<INPUT TYPE="hidden" VALUE="<? echo $result; ?>" NAME="result">
+<INPUT TYPE="hidden" VALUE="<?php echo $result; ?>" NAME="result">
 </FORM>
 
 <FORM name="volu" action="nof7.php"  method="post">
  <h2>Calculate and enter the value of the Reynolds number  and Friction factor you have just computed:</h2>
 <h3>Reynolds no &nbsp;<INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="rey"> <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="img/rg.png"><img id="re_w" style="display:none;" src="img/wg.png"></h3>
-<INPUT TYPE="hidden" VALUE="<? echo $re_check; ?>" name="re_chk"> 
-<INPUT TYPE="hidden" VALUE="<? echo $fric_check; ?>" name=fric_chk> 
-<INPUT TYPE="hidden" VALUE="<? echo $eid; ?>" name=eid>
-<INPUT TYPE="hidden" VALUE="<? echo $h1; ?>" name=h1> 
-<INPUT TYPE="hidden" VALUE="<? echo $h2; ?>" name=h2> 
-<INPUT TYPE="hidden" VALUE="<? echo $time; ?>" name=time> 
-<INPUT TYPE="hidden" VALUE="<? echo $vel; ?>" name=v1>
-<INPUT TYPE="hidden" VALUE="<? echo $resu; ?>" name=result> 
+<INPUT TYPE="hidden" VALUE="<?php echo $re_check; ?>" name="re_chk"> 
+<INPUT TYPE="hidden" VALUE="<?php echo $fric_check; ?>" name=fric_chk> 
+<INPUT TYPE="hidden" VALUE="<?php echo $eid; ?>" name=eid>
+<INPUT TYPE="hidden" VALUE="<?php echo $h1; ?>" name=h1> 
+<INPUT TYPE="hidden" VALUE="<?php echo $h2; ?>" name=h2> 
+<INPUT TYPE="hidden" VALUE="<?php echo $time; ?>" name=time> 
+<INPUT TYPE="hidden" VALUE="<?php echo $vel; ?>" name=v1>
+<INPUT TYPE="hidden" VALUE="<?php echo $resu; ?>" name=result> 
 <h3>Friction factor <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="fric"> <INPUT TYPE="button" VALUE="Check" NAME="fric_check" onClick="check_fric();"><img style="display:none;" id="fric_r" src="img/rg.png"><img id="fric_w" style="display:none;" src="img/wg.png"></h3>
 </FORM>
 
@@ -380,7 +380,7 @@ Transition <img style="display:none;"  id="br" src="img/rg.png"><img id="bw" sty
 
 <INPUT TYPE="RADIO" VALUE="c" NAME="cc" onClick="checkAnswer2();">
 Turbulent <img style="display:none;"  id="cr" src="img/rg.png"><img id="cw" style="display:none;" src="img/wg.png"><BR>
-<INPUT TYPE="hidden" VALUE="<? echo $resu; ?>" NAME="result">
+<INPUT TYPE="hidden" VALUE="<?php echo $resu; ?>" NAME="result">
 
 <input type="image" src="img/next.jpg" alt="Submit button">
 </FORM>

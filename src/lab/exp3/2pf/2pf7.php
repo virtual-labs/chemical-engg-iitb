@@ -119,9 +119,13 @@ function check()
 
     var relr = document.nof.relr.value;
 
-    var flr = document.nof.flr.value;
+    // var flr = document.nof.flr.value;
 
-  var rear = document.nof.rear.value;
+	var rear = document.nof.flr.value;
+
+//   var rear = document.nof.rear.value;
+
+var flr = document.nof.rear.value;
 
     var far = document.nof.far.value;
   var delplr = document.nof.delplr.value;
@@ -131,6 +135,19 @@ function check()
 
     var ylr = document.nof.ylr.value;
 
+	
+	// console.log("relr-rela: ",relr-rela);
+	// console.log("rear: ",rear);
+	// console.log("reaa: ",reaa);
+	// console.log("rear-reaa: ",rear-reaa);
+	// console.log("flr: ",flr);
+	// console.log("fla: ",fla);
+	// console.log("flr-fla: ",flr-fla);
+	// console.log("far-faa: ",far-faa);
+	// console.log("delpar-delpaa: ",delpar-delpaa);
+	// console.log("delplr-delpla: ",delplr-delpla);
+	// console.log("ylr-yla: ",ylr-yla);
+	// console.log("xr-xa: ",xr-xa);
 
 
 if((Math.abs((relr-rela)) <= 50) && (Math.abs((rear-reaa)) <= 50) && (Math.abs((flr-fla)) <= 0.1) && (Math.abs((far-faa)) <= 0.1) && (Math.abs((delpar-delpaa )) <= 1)&& (Math.abs((delplr-delpla)) <= 1) && (Math.abs((ylr-yla)) <= 10) && (Math.abs((xr-xa)) <= 1))
@@ -166,7 +183,7 @@ alert("Invalid answer Try again");
 <img src="2p.jpg">
 </div>
 <div id="content">
-<?
+<?php
 
 		$rel = $_SESSION['rel'];
 		//echo "Rel ".$rel;
@@ -220,15 +237,15 @@ Calculate 2 phase pressure drop: <input style="width:80px;height:30px;background
 <br /><br>
 
 
-<input type="hidden" value="<? echo $rel; ?>" name="rela" />
-<input type="hidden" value="<? echo $fl; ?>" name="fla" />
-<input type="hidden" value="<? echo $rea; ?>" name="reaa" />
-<input type="hidden" value="<? echo $fa; ?>" name="faa" />
-<input type="hidden" value="<? echo $pdropl; ?>" name="delpla" />
-<input type="hidden" value="<? echo $pdropa; ?>" name="delpaa" />
-<input type="hidden" value="<? echo $x; ?>" name="xa" />
-<input type="hidden" value="<? echo $yl; ?>" name="yla" />
-<input type="hidden" value="<? echo $pdrop; ?>" name="dp" />
+<input type="hidden" value="<?php echo $rel; ?>" name="rela" />
+<input type="hidden" value="<?php echo $fl; ?>" name="fla" />
+<input type="hidden" value="<?php echo $rea; ?>" name="reaa" />
+<input type="hidden" value="<?php echo $fa; ?>" name="faa" />
+<input type="hidden" value="<?php echo $pdropl; ?>" name="delpla" />
+<input type="hidden" value="<?php echo $pdropa; ?>" name="delpaa" />
+<input type="hidden" value="<?php echo $x; ?>" name="xa" />
+<input type="hidden" value="<?php echo $yl; ?>" name="yla" />
+<input type="hidden" value="<?php echo $pdrop; ?>" name="dp" />
 <input type="button" onClick="check();" VALUE="Verify calculations">
 
 </form>

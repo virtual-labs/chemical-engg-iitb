@@ -95,7 +95,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 $t1 = $_POST["temp"];
 $k = $_POST["kal"];
 $vol = $_POST["vol"];
@@ -207,15 +207,15 @@ $message = "0$".$k." ".$vol;
 		
     
     <form name="time" method="post" action="cal5.php">
-<input name=cpmix type="hidden" value="<? echo $cpmix; ?>"><br>
+<input name=cpmix type="hidden" value="<?php echo $cpmix; ?>"><br>
 <input name=timer type="hidden" value=""><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
-<input name="t1" type="hidden" value="<? echo $t1; ?>"><br>
-<h3>Volume for benzene: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $vol; ?>" NAME="vol" readonly=true> ml</h3>
-<h3>Volume for acetone: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $vol2; ?>" NAME="vol2" readonly=true> ml</h3>
-<h3>Temperature of system : <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $abs_t; ?>" NAME="temp" readonly=true> K</h3>
-<INPUT TYPE="hidden" VALUE="<? echo $htmix; ?>" NAME="htmix" readonly=true>
- <INPUT TYPE="hidden" VALUE="<? echo $mf; ?>" NAME="mf" readonly=true>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
+<input name="t1" type="hidden" value="<?php echo $t1; ?>"><br>
+<h3>Volume for benzene: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $vol; ?>" NAME="vol" readonly=true> ml</h3>
+<h3>Volume for acetone: <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $vol2; ?>" NAME="vol2" readonly=true> ml</h3>
+<h3>Temperature of system : <INPUT style="width:90px;height:30px;background-color:#D0F18F;color:#53760D;font:20px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $abs_t; ?>" NAME="temp" readonly=true> K</h3>
+<INPUT TYPE="hidden" VALUE="<?php echo $htmix; ?>" NAME="htmix" readonly=true>
+ <INPUT TYPE="hidden" VALUE="<?php echo $mf; ?>" NAME="mf" readonly=true>
 <input type="image" src="next.jpg" alt="Submit button">
 </form>
 </center>

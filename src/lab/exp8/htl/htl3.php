@@ -199,7 +199,7 @@ border-top: 0px solid gray;
 
 
 <div id="content">
-<?
+<?php
 include_once("config.inc.php");
 
 
@@ -245,18 +245,18 @@ $eid = $_SESSION['eid'];
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
   date_default_timezone_set('Asia/Calcutta');
 $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- /*$result = mysql_query("INSERT INTO vle_data (
+mysqli_select_db ($cid,$db);
+ /*$result = mysqli_query("INSERT INTO vle_data (
 `eid` ,
 `v1` ,
 `v2`,
@@ -265,7 +265,7 @@ mysql_select_db ("$db");
 `riy`,
 `t`
 )
-VALUES ('$eid','$v1','$v2','$hl','$rix','$riy','$t')") or die("MySQL Login Error: ".mysql_error()); */
+VALUES ('$eid','$v1','$v2','$hl','$rix','$riy','$t')") or die("mysqli Login Error: ".mysqli_error()); */
 
 
 /*echo "
@@ -283,19 +283,19 @@ VALUES ('$eid','$v1','$v2','$hl','$rix','$riy','$t')") or die("MySQL Login Error
 <tbody>";
 
 
-mysql_select_db ("$db");
+mysqli_select_db ("$db");
 $qry = "SELECT percent,hft,cft,thout,tcout FROM `htl_datanew` where eid='$eid'";
 echo "<br>" .$qry;
-$stuff = mysql_query($qry) or die("MySQL Login Error: ".mysql_error());
+$stuff = mysqli_query($qry) or die("mysqli Login Error: ".mysqli_error());
 echo $stuff; 
 
-if (mysql_num_rows($stuff) > 0) { 
+if (mysqli_num_rows($stuff) > 0) { 
 
-$row=mysql_num_rows($stuff);
+$row=mysqli_num_rows($stuff);
 echo $row;
 $mes_val ="";
 $i='0';
-while($row = mysql_fetch_array($stuff))
+while($row = mysqli_fetch_array($stuff))
   {
 $i++;
   $percent=$row['percent'];
@@ -308,9 +308,11 @@ $i++;
 ?>
 </tbody>
 </table>*/
+$SQLCommand = mysqli_query($cid,"SELECT eid, percent, hft, cft, thout, tcout from htl_datanew where eid='$eid'") or die("mysqli Login Error: ".mysqli_error());
 
-$SQLCommand="select eid, percent, hft, cft, thout, tcout from htl_datanew where eid='$eid'";
-    $result=mysql_query($SQLCommand);
+
+// $SQLCommand="select eid, percent, hft, cft, thout, tcout from htl_datanew where eid='$eid'";
+//     $result=mysqli_query($SQLCommand);
     echo "<table align='center'>
     <tr>
     
@@ -322,7 +324,7 @@ $SQLCommand="select eid, percent, hft, cft, thout, tcout from htl_datanew where 
     <th>THOUT</th>
     <th>TCOUT</th>
 </tr>";
-    while($row = mysql_fetch_array($result))
+    while($row = mysqli_fetch_array($SQLCommand))
         {
   echo "<tr>";
   
@@ -336,7 +338,7 @@ $SQLCommand="select eid, percent, hft, cft, thout, tcout from htl_datanew where 
 echo "</table>";
 ?>
 <br><br>
-<center><a href=../list.php?mode=home><img border=0 src=home.jpg></a>&nbsp;&nbsp;&nbsp;<br><br><a href="down.php?mode=<? echo $eid ?>"> <img border=0 src=download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=><img border=0 src=end.jpg></a></center>
+<center><a href=../list.php?mode=home><img border=0 src=home.jpg></a>&nbsp;&nbsp;&nbsp;<br><br><a href="down.php?mode=<?php echo $eid ?>"> <img border=0 src=download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=><img border=0 src=end.jpg></a></center>
 <br><br>
 
 </form>

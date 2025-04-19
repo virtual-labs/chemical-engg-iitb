@@ -128,15 +128,15 @@ include_once("config.inc.php");
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("INSERT INTO data (
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"INSERT INTO data (
 `eid` ,
 `h1` ,
 `h2`,
@@ -146,7 +146,7 @@ mysql_select_db ("$db");
 `re`,
 `fric`
 )
-VALUES ('$eid','$h1','$h2','$time','$v1','$result','$rey','$fric')") or die("MySQL Login Error: ".mysql_error()); 
+VALUES ('$eid','$h1','$h2','$time','$v1','$result','$rey','$fric')") or die("mysqli Login Error: ".mysqli_error()); 
 
 
 
@@ -163,21 +163,21 @@ include_once("config.inc.php");
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
-mysql_select_db ($db);
-$stuff = mysql_query("SELECT * FROM `data` WHERE eid='".$eid."'") or die("MySQL Login Error: ".mysql_error()); 
+mysqli_select_db ($cid,$db);
+$stuff = mysqli_query($cid,"SELECT * FROM `data` WHERE eid='".$eid."'") or die("mysqli Login Error: ".mysqli_error()); 
 
  # Check for errors.
-if (mysql_num_rows($stuff) > 0)
+if (mysqli_num_rows($stuff) > 0)
  { 
- $row=mysql_num_rows($stuff);
+ $row=mysqli_num_rows($stuff);
 
 
-while($row = mysql_fetch_array($stuff))
+while($row = mysqli_fetch_array($stuff))
   {
 $re=$row['re'];
 $fric=$row['fric']; 
@@ -192,7 +192,7 @@ $mes = $mes." + \"".$inv_re.",".$fric."\\n\"";
 
 ?>
 
-<center><a href=http://iitb.vlab.co.in><img border=0 src=img/home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=http://iitb.vlab.co.in/?sub=8&brch=116><img border=0 src=img/end.jpg></a><br><br><a href="report2.php?mode=<? echo $eid ?>"><img border=0 src=img/download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof3.php?mode=rerun><img border=0 src=img/re.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof1.php?mode=restart><img border=0 src=img/r.jpg></a></center>
+<center><a href=http://iitb.vlab.co.in><img border=0 src=img/home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=http://iitb.vlab.co.in/?sub=8&brch=116><img border=0 src=img/end.jpg></a><br><br><a href="report2.php?mode=<?php echo $eid ?>"><img border=0 src=img/download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof3.php?mode=rerun><img border=0 src=img/re.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof1.php?mode=restart><img border=0 src=img/r.jpg></a></center>
 
 
 

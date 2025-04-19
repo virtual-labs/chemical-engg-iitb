@@ -254,7 +254,7 @@ include_once("config.inc.php");
 <FORM name="volu" action="fm6.php"  method="post">
  <h2>Percentage error calculation in theortical and experimental pressure drop</h2>
 
-<h3>Experimental pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $pres; ?>" NAME="epre" readonly> </h3>
+<h3>Experimental pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $pres; ?>" NAME="epre" readonly> </h3>
 
 <h3>Theortical pressure drop : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="tpre"> <INPUT TYPE="button" VALUE="Calculate percentage error" NAME="re_check" onClick="cal_per();"></h3><br><br>
 

@@ -110,7 +110,7 @@ border-top: 0px solid gray;
 
 </div>
 <div id="content">
-<?
+<?php
 
 	$dia = $_GET["dia"];
 	$length = $_GET["len"];
@@ -187,9 +187,9 @@ border-top: 0px solid gray;
 			</a>
 		</div>
 </TD>
-<input name ="dia" type="hidden" value="<? echo $dia ?>" >
-<input name ="length" type="hidden" value="<? echo $length ?>" >
-<input name ="ptype" type="hidden" value="<? echo $ptype ?>" >
+<input name ="dia" type="hidden" value="<?php echo $dia ?>" >
+<input name ="length" type="hidden" value="<?php echo $length ?>" >
+<input name ="ptype" type="hidden" value="<?php echo $ptype ?>" >
 
 </form>
 

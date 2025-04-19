@@ -22,9 +22,9 @@ element = document.getElementById('re_r').style;
 
 efca =document.volu.efca.value;
 efc = document.volu.efc.value;
-
-
-if(Math.abs((efca*100-efc)/efca) <= 5)
+// ab = Math.abs((efca*100-efc)/efca);
+ab = Math.abs(((efca-efc)*100)/efca);
+if(ab <= 5)
 {
 alert("efficiency of column value is correct");
 
@@ -45,9 +45,9 @@ function check_re2()
 
 efba =document.volu.efba.value;
 efb = document.volu.efb.value;
-
-
-if(Math.abs((efba*100-efb)/efba) <= 5)
+// Math.abs((efba*100-efb)/efba;
+ac = Math.abs(((efba-efb)*100)/efba);
+if(ac <= 5)
 {
 alert("efficiency of bubble pot value is correct");
 
@@ -193,9 +193,9 @@ $yb =$_SESSION['y_b'];
  <h2>Calculation of efficiency</h2>
 <p>Using the values obtained by titration, input parameters, and reaction stoichiometry  calculate the efficiency of column and bubble pot.  Express the efficiency as the percentage of CO<sub>2</sub> absorbed to the total input.
 </p> 
-<h3>Enter the efficiency of column : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="efc"> <input type="hidden" value="<? echo $yc; ?>" name="efca" /> % <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Enter the efficiency of column : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="efc"> <input type="hidden" value="<?php echo $yc; ?>" name="efca" /> % <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 
-<h3>Enter the efficiency of bubble pot:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="efb"> <input type="hidden" value="<? echo $yb; ?>" name="efba" /> % <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re2();"><img style="display:none;" id="re_r2" src="rg.png"><img id="re_w2" style="display:none;" src="wg.png"></h3>
+<h3>Enter the efficiency of bubble pot:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="efb"> <input type="hidden" value="<?php echo $yb; ?>" name="efba" /> % <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re2();"><img style="display:none;" id="re_r2" src="rg.png"><img id="re_w2" style="display:none;" src="wg.png"></h3>
 
 
 

@@ -110,7 +110,7 @@ border-top: 0px solid gray;
 
 </div>
 <div id="content">
-<?
+<?php
 
 	$dia = $_GET["dia"];
 	$length = $_GET["len"];
@@ -312,8 +312,8 @@ The adjustment valves are to be used for low flow rates whereas the main valves 
 			</a>
 		</div>
 </TD>
-<input name ="dia" type="hidden" value="<? echo $dia ?>" >
-<input name ="length" type="hidden" value="<? echo $length ?>" >
+<input name ="dia" type="hidden" value="<?php echo $dia ?>" >
+<input name ="length" type="hidden" value="<?php echo $length ?>" >
 
 </form>
 

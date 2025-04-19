@@ -168,7 +168,7 @@ $mes = $mes." + \"".$inv_re.",".$fric."\\n\"";
 }
 }
 ?>
-<center><a href=http://iitb.vlab.co.in><img border=0 src=img/home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=http://iitb.vlab.co.in/?sub=8&brch=116><img border=0 src=img/end.jpg></a><br><br><a href="report2.php?mode=<? echo $eid ?>"><img border=0 src=img/download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof3.php?mode=rerun><img border=0 src=img/re.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof1.php?mode=restart><img border=0 src=img/r.jpg></a></center>
+<center><a href=http://iitb.vlab.co.in><img border=0 src=img/home.jpg></a>&nbsp;&nbsp;&nbsp;<a href=http://iitb.vlab.co.in/?sub=8&brch=116><img border=0 src=img/end.jpg></a><br><br><a href="report2.php?mode=<?php echo $eid ?>"><img border=0 src=img/download.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof3.php?mode=rerun><img border=0 src=img/re.jpg></a>&nbsp;&nbsp;&nbsp;<a href=nof1.php?mode=restart><img border=0 src=img/r.jpg></a></center>
 <p></p>
 </div>
 <div id="footer">

@@ -250,6 +250,9 @@ include_once("config.inc.php");
 	
 	$res[0] = $f;
 	$res[1] = $dp;
+
+  echo("res0: ".$res[0]);
+  echo("res1: ".$res[1]);
 	
 echo "<h2>Friction factor : ".round($res[0],4)."</h2><br><br>";
 	$time = $time." sec"; 
@@ -259,16 +262,16 @@ echo "<h2>Pressure drop through pipe  : ".round($res[1],8)." bar</h2><br><br>";
 
 ?>
 
-<FORM name="volu" action="fm5.php?pres=<? echo round($res[1],4);?>"  method="post">
+<FORM name="volu" action="fm5.php?pres=<?php echo round($res[1],4);?>"  method="post">
  <h2>Determine the values of the Reynolds number,Friction factor,Theortical pressure drop you have just computed::</h2>
 
-<h3>Volume collected <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $v ; ?>" NAME="vol"> </h3>
+<h3>Volume collected <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $v ; ?>" NAME="vol"> </h3>
 
-<h3>Time <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $time; ?>" NAME="time"> </h3>
+<h3>Time <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $time; ?>" NAME="time"> </h3>
 <h3>Friction factor : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="press"> </h3>
 
 <h3>Reynolds no	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="rey"> </h3>
-<INPUT TYPE="hidden" VALUE="<? echo $result; ?>" NAME="result">
+<INPUT TYPE="hidden" VALUE="<?php echo $result; ?>" NAME="result">
 
 
 <h3>Pipe roughness : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="press"> </h3>

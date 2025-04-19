@@ -162,9 +162,11 @@ $gper = $_POST["gpercent"];
 $dia = $_POST["dia"]; //inch
 $length = $_POST["length"]; //inch
 $ptype = $_POST["ptype"];
-$_SESSION['ptype'] = $ptype;
-$ptype= explode(",", $ptype);
 
+$_SESSION['ptype'] = $ptype;
+//$ptype= explode(",", $ptype);
+//echo("ptype: ".$ptype);
+//echo($dia);
 $diam = $dia*0.0254; //m
 $lengthm = $length*0.0254; //m
 $pi=3.1416;
@@ -242,7 +244,7 @@ echo "<INPUT style=\"position:relative;bottom:200px;width:160px;height:50px;back
 
 <FORM name="volu" action="hpc4.php"  method="post">
  <h2>Record the manometer reading and calculate</h2>
-<h3>Calculate Gas mass velocity:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="hidden" value="<? echo $pdrop; ?>" name="pdrop" /> kg/m<sup>2</sup>-sec<INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Calculate Gas mass velocity:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="pdropa"> <input type="text" value="<?php echo $pdrop; ?>" name="pdrop" /> kg/m<sup>2</sup>-sec<INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 
 
 

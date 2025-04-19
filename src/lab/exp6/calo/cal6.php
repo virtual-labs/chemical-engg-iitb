@@ -95,7 +95,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 include_once("config.inc.php");
 
 $t1 = $_POST["t1"];
@@ -114,18 +114,18 @@ $time = $_POST["timer"];
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
    date_default_timezone_set('Asia/Calcutta');
 $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("INSERT INTO cal_data (
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"INSERT INTO cal_data (
 `eid` ,
 `t1` ,
 `t2`,
@@ -137,7 +137,7 @@ mysql_select_db ("$db");
 `time` ,
 `date`
 )
-VALUES ('$eid','$t1','$t2','$t3','$v1','$v2','$hm','$mfr','$time','$date')") or die("MySQL Login Error: ".mysql_error()); 
+VALUES ('$eid','$t1','$t2','$t3','$v1','$v2','$hm','$mfr','$time','$date')") or die("mysqli Login Error: ".mysqli_error()); 
 	
 ?>
 
@@ -151,7 +151,7 @@ VALUES ('$eid','$t1','$t2','$t3','$v1','$v2','$hm','$mfr','$time','$date')") or 
 
 <center>
 
-<?
+<?php
 $_SESSION['count'] = $_SESSION['count'] + 1;
 $i_left = 4 - $_SESSION['count'];
 if($_SESSION['count'] < 4)

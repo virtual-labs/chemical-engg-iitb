@@ -95,7 +95,7 @@ border-top: 0px solid gray;
 </head>
 <body>
   <div id="container">
-<?
+<?php
 if($_GET['k'])
 {
 $k = $_GET["k"];
@@ -134,7 +134,7 @@ Now you will determine the specific heat of the acetone using water equivalent o
     
     <form name="time" method="post" action="cal3a.php">
 <input name=timer type="hidden" value=""><br>
-<input name="kal" type="hidden" value="<? echo $k; ?>"><br>
+<input name="kal" type="hidden" value="<?php echo $k; ?>"><br>
 <input name="cp" type="hidden" ><br>
 <input type="image" src="next.jpg" alt="Submit button">
 </form>

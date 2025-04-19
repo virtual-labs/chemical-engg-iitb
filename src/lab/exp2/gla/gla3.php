@@ -144,52 +144,52 @@ alert("Invalid answer Try again");
 </p>
 </div>
 <div id="content">
-<?
+<?php
 $conc_NaOH_bub_in = $_POST["conc_NaOH_bub_in"];
-echo "$conc_NaOH_bub_in";
+//echo "$conc_NaOH_bub_in";
 $gas_flo = $_POST["gas_flo"];
-echo "$gas_flo";
+//echo "$gas_flo";
 $conc_NaOH_input = $_POST["conc_NaOH_input"];
-echo "$conc_NaOH_input";
+//echo "$conc_NaOH_input";
 $liq_flo = $_POST["liq_flo"];
-echo "$liq_flo";
+//echo "$liq_flo";
 $vNaOH = 10;
-echo "$vNaOH";
+//echo "$vNaOH";
 $t = 10; # time of run of experiment (min)
-echo "$t";
+//echo "$t";
 $vol_bub = 3;  # vol. of NaOH initially in Bubbling Pot (l)
-echo "$vol_bub";
+//echo "$vol_bub";
 $conc_HCl = 1 + (mt_rand(0,100)/100)/20;
-echo "$conc_HCl";
+//echo "$conc_HCl";
 
 $y_c = 0.4 + (mt_rand(0,100)/100)*2/10;  #random efficiency b/w 0.4 & 0.6
-echo "$y_c";
+//echo "$y_c";
 
 $c_in = $gas_flo/22.4;   # amount of CO2 fed (mol/hr)
-echo "$c_in";
+//echo "$c_in";
 
 $c = $y_c*$c_in;            # amount of CO2 reacted (mol/hr)
-echo "$c";
+//echo "$c";
 $n = 2*$c;
-echo "$n";               # amount oh NaOH reacted (mol/hr)
+//echo "$n";               # amount oh NaOH reacted (mol/hr)
 
 $conc_NaOH_out = $conc_NaOH_input - $n/$liq_flo;  #conc. of NaOH in outlet stream
-echo "$conc_NaOH_out";
+//echo "$conc_NaOH_out";
 
 $vHCl_c = $conc_NaOH_out * $vNaOH / $conc_HCl;
-echo "$vHCl_c";
+//echo "$vHCl_c";
 $vHCl_c = round($vHCl_c*10)/10;
-echo "$vHCl_c";
+//echo "$vHCl_c";
 $vHCl_1_c = ($vNaOH * $conc_NaOH_input - $vHCl_c)/2 +$vHCl_c;  #%vol. of HCl used in first titration
-echo "$vHCl_1_c";
+//echo "$vHCl_1_c";
 $vHCl_1_c = round($vHCl_1_c*10)/10;
-echo "$vHCl_1_c";
+//echo "$vHCl_1_c";
 
 $vHCl_c = round($vHCl_c*10)/10;
-echo "$vHCl_c";
+//echo "$vHCl_c";
 
 $vHCl_2_c = $vHCl_1_c - $vHCl_c;   #vol. of HCl used in second titration
-echo "$vHCl_2_c";
+//echo "$vHCl_2_c";
 
 $_SESSION['vHCl_1_c'] = $vHCl_1_c;
 $_SESSION['vHCl_2_c'] = $vHCl_2_c;
@@ -198,40 +198,40 @@ $_SESSION['y_c'] = $y_c;
 
 
 $y_b = $y_c + (mt_rand(0,100)/100)*2/10;   # random efficiency
-echo "$y_b";
+//echo "$y_b";
 
 $mCO2_in_b = ($c_in - $c)*($t/60); # amount of CO2 fed in bubble pot in 10 min (mol)
-echo "$mCO2_in_b";
+//echo "$mCO2_in_b";
 
 $mCO2_reac_b = $y_b * $mCO2_in_b;  #amount of CO2 reacted in bubble pot in 10 min (mol)
-echo "$mCO2_reac_b";
+//echo "$mCO2_reac_b";
 
 $mNaOH_reac_b = $mCO2_reac_b*2;   # amount of NaOH reacted in Bubble pot (mol)
-echo "$mNaOH_reac_b";
+//echo "$mNaOH_reac_b";
 
 $mNaOH_b = $conc_NaOH_bub_in * $vol_bub; # amount of NaOH present initially (mol)
-echo "$mNaOH_b";
+//echo "$mNaOH_b";
 
 $mNaOH_rem_b = $mNaOH_b - $mNaOH_reac_b; # amount of NaOH unreacted (mol)
-echo "$mNaOH_rem_b";
+//echo "$mNaOH_rem_b";
 
 $conc_NaOH_bub_f = $mNaOH_rem_b/$vol_bub;
-echo "$conc_NaOH_bub_f";
+//echo "$conc_NaOH_bub_f";
 
 $vHCl_b = $conc_NaOH_bub_f * $vNaOH / $conc_HCl;
-echo "$vHCl_b";
+//echo "$vHCl_b";
 
 $vHCl_1_b = ($vNaOH * $conc_NaOH_bub_in - $vHCl_b)/2 +$vHCl_b;   #vol. of HCl used in first titration
-echo "$vHCl_1_b";
+//echo "$vHCl_1_b";
 
 $vHCl_1_b = round($vHCl_1_b*10)/10;
-echo "$vHCl_1_b";
+//echo "$vHCl_1_b";
 
 $vHCl_b = round($vHCl_b*10)/10;
-echo "$vHCl_b";
+//echo "$vHCl_b";
 
 $vHCl_2_b = $vHCl_1_b - $vHCl_b;     #vol. of HCl used in second titration
-echo "$vHCl_2_b";
+//echo "$vHCl_2_b";
 
 $_SESSION['vHCl_1_b'] = $vHCl_1_b;
 $_SESSION['vHCl_2_b'] = $vHCl_2_b;
@@ -250,7 +250,7 @@ Now liquid and gas phase enters in column. When steady-state is reached the spen
 
 
 <br><br>
-<input type="hidden" value="<? echo $res; ?>" name="res" />
+<input type="hidden" value="<?php echo $res; ?>" name="res" />
 <input type="submit" VALUE="Proceed to titration ">
 
 </form>

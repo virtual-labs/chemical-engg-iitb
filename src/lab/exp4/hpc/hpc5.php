@@ -294,9 +294,9 @@ echo "loading_vel\n".$G_l;
 
 <FORM name="volu" action="hpc6.php"  method="post">
  <h2>Calculation of flooding and loading point</h2>
-<h3>Enter the gas flooding point : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="fvela"> <input type="hidden" value="<? echo $G_flooding; ?>" name="fvel" /> m/sec <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
+<h3>Enter the gas flooding point : <INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="fvela"> <input type="text" value="<?php echo $G_flooding; ?>" name="fvel" /> m/sec <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re();"><img style="display:none;" id="re_r" src="rg.png"><img id="re_w" style="display:none;" src="wg.png"></h3>
 
-<h3>Enter the gas loading point:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="lvela"> <input type="hidden" value="<? echo $G_loading; ?>" name="lvel" /> m/sec <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re2();"><img style="display:none;" id="re_r2" src="rg.png"><img id="re_w2" style="display:none;" src="wg.png"></h3>
+<h3>Enter the gas loading point:	<INPUT style="width:90px;height:50px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="" NAME="lvela"> <input type="text" value="<?php echo $G_loading; ?>" name="lvel" /> m/sec <INPUT TYPE="button" VALUE="Check" NAME="re_check" onClick="check_re2();"><img style="display:none;" id="re_r2" src="rg.png"><img id="re_w2" style="display:none;" src="wg.png"></h3>
 
 <input type="image" src="next.jpg" alt="Submit button">
 

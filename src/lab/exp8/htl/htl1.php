@@ -100,7 +100,7 @@ border-top: 0px solid gray;
 </head>
 <body>
 
-<?
+<?php
 $sys = $_GET["sys"];
 
 if($sys=="0")
@@ -116,44 +116,44 @@ include_once("config.inc.php");
  global $db, $db_host, $db_user, $db_password;
 
  # Connect to the database and report any errors on connect.
- $cid = mysql_connect($db_host,$db_user,$db_password);
+ $cid = mysqli_connect($db_host,$db_user,$db_password);
 
  if (!$cid) {
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
  } 
  date_default_timezone_set('Asia/Calcutta');
 $date = date('l jS \of F Y h:i:s A');
 
 
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("INSERT INTO htl_exp (
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"INSERT INTO htl_exp (
 `eid` ,
 `name` ,
 `sys` ,
 `date` 
 )
-VALUES ('','Anuradha Bhat','$sys','$date')") or die("MySQL Login Error: ".mysql_error()); 
+VALUES ('','Anuradha Bhat','$sys','$date')") or die("mysqli Login Error: ".mysqli_error()); 
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
 
  {
-mysql_select_db ("$db");
-$stuff = mysql_query("SELECT * FROM `htl_exp` where date='$date'") or die("MySQL Login Error: ".mysql_error()); 
+mysqli_select_db ($cid,$db);
+$stuff = mysqli_query($cid,"SELECT * FROM `htl_exp` where date='$date'") or die("mysqli Login Error: ".mysqli_error()); 
 
-if (mysql_num_rows($stuff) > 0) { 
+if (mysqli_num_rows($stuff) > 0) { 
 
-$row=mysql_num_rows($stuff);
+$row=mysqli_num_rows($stuff);
 
 
-while($row = mysql_fetch_array($stuff))
+while($row = mysqli_fetch_array($stuff))
   {
   $srno=$row['Srno'];
 }
@@ -167,16 +167,16 @@ while($row = mysql_fetch_array($stuff))
  $random = rand($floor, $ceiling);
 $eid = $srno.$random;
  # Setup SQL statement and add the account into the system.
-mysql_select_db ("$db");
- $result = mysql_query("UPDATE htl_exp
+mysqli_select_db ($cid,$db);
+ $result = mysqli_query($cid,"UPDATE htl_exp
 SET eid='$eid' 
-WHERE Srno='$srno'") or die("MySQL Login Error: ".mysql_error()); 
+WHERE Srno='$srno'") or die("mysqli Login Error: ".mysqli_error()); 
 
 
  # Check for errors.
  if (!$result) {
 
-  die("ERROR: " . mysql_error() . "\n");
+  die("ERROR: " . mysqli_error() . "\n");
 
  } 
 else
@@ -238,15 +238,15 @@ Enter position of valve for hot fluid (% opened)
 <table>
 <tr>
 <td align="right">
-Cold fluid flow rate : </td><td align="left"><INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $flow;?>" NAME="vol"> lph</td></tr>
+Cold fluid flow rate : </td><td align="left"><INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $flow;?>" NAME="vol"> lph</td></tr>
 <tr>
 <td align="right">
-Hot fluid inlet temperature :</td><td align="left"> <INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo $hft;?>" NAME="hft"> &deg;C </td></tr>
+Hot fluid inlet temperature :</td><td align="left"> <INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo $hft;?>" NAME="hft"> &deg;C </td></tr>
 
 <tr>
 <td align="right">
-Cold fluid inlet temperature :</td><td align="left"> <INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<? echo mt_rand(25.0,26.5);?>" NAME="cft"> &deg;C </td></tr> </table>
-<INPUT TYPE="hidden" VALUE="<? echo $sys; ?>" name=flag> 
+Cold fluid inlet temperature :</td><td align="left"> <INPUT style="width:50px;height:30px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;border:solid 1px #6DB72C;background-color:#D0F18F;" TYPE="text" VALUE="<?php echo mt_rand(25.0,26.5);?>" NAME="cft"> &deg;C </td></tr> </table>
+<INPUT TYPE="hidden" VALUE="<?php echo $sys; ?>" name=flag> 
 <br>
 
   <INPUT type="image" name="search" src="next.jpg" border="0"></TD>
@@ -255,7 +255,7 @@ Cold fluid inlet temperature :</td><td align="left"> <INPUT style="width:50px;he
 
 </div>
 <div id="content">
-<?
+<?php
 $sys = $_GET["sys"];
 
 if($sys=="0")
